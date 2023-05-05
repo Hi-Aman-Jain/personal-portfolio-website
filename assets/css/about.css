@@ -58,7 +58,7 @@ body {
 .pre-heading {
   padding-top: 1%;
   font-size: large;
-  color:#71716f;
+  color: var(--head-col);
   
 
   
@@ -86,7 +86,7 @@ body {
   position: relative;
   top: -10px;
   left: -20px;
-  color: #fad037;
+  color: #4e00bb;
 }
 
 /*Responsive*/
