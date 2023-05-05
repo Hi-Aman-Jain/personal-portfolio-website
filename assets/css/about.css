@@ -56,7 +56,7 @@ body {
 /* section 2 starts here */
 
 .pre-heading {
-  padding-top: 1%;
+  padding-top: 2.6%;
   font-size: large;
   color: var(--head-col);
   
@@ -66,19 +66,19 @@ body {
 
 .section-2{
   width: 100%;
-  margin-top: -130px;
+  margin-top: -150px;
   margin-left: 40px;
 }
 .my-about-wrapper .about{
-  font-size: 10rem;
-  margin-bottom:-70px;
+  font-size: 8.5rem;
+  margin-bottom:-100px;
   font-weight:bold;
-  color: #5c5b5b;
+  color: var(--head-col);
 }
 .my-self{
-  width: 320px; 
   margin: auto;
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: 100px;
   font-weight: bold;
   letter-spacing: 3px;
   display: block;
