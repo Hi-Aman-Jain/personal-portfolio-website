@@ -1,0 +1,388 @@
+/*Import font*/
+
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+/*Declaring CSS variables for Light mode*/
+
+html[light-mode="light"] {
+  --bg1-color: #ffffff;
+  --bg-head: #ffffff;
+  --bg-col: #fff;
+  --p-up: black;
+  --bg-cite-y: #f5f5f5;
+  --cite-bg: #fff;
+  --cite-head: rgb(221, 217, 217);
+  --cite-col-txt: #333;
+  --cite-close: #333;
+  --cite-hover: black;
+  --hover-link: black;
+  --shadow-col1: #a3b1c6;
+  --shadow-col2: #ffffff;
+}
+
+/*Declaring CSS variables for Dark Mode*/
+
+html[light-mode="dark"] {
+  --bg1-color: #272727;
+  --bg-col: rgba(0, 0, 0, 0);
+  --text-gra: ;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --p-up: #fff;
+  --bg-head: rgba(0, 0, 0, 0.877);
+  --bg-head-img: rgba(0, 0, 0, 0.877);
+  --bg-cite-y: rgba(0, 0, 0, 0.877);
+  --black-two: rgba(0, 0, 0, 0.877);
+  --cite-head: rgb(59, 55, 55);
+  --cite-bg: black;
+  --cite-col-txt: #fff;
+  --cite-close: rgba(0, 0, 0, 0.192);
+  --cite-hover: #fff;
+  --hover-link: rgb(236, 103, 125);
+  --shadow-col1: rgb(29, 28, 28);
+  --shadow-col2: rgba(34, 34, 34, 0.459);
+}
+
+/*For Changing background color of body according to theme*/
+body {
+  background: var(--bg-col) !important;
+}
+
+.p-upper {
+  color: var(--p-up);
+}
+
+/* color of about page heading*/
+/* section 2 starts here */
+
+.pre-heading {
+  padding-top: 1%;
+  font-size: large;
+  color:#71716f;
+  
+
+  
+}
+
+.section-2{
+  width: 100%;
+  margin-top: -130px;
+  margin-left: 40px;
+}
+.my-about-wrapper .about{
+  font-size: 10rem;
+  margin-bottom:-70px;
+  font-weight:bold;
+  color: #5c5b5b;
+}
+.my-self{
+  width: 320px; 
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: block;
+  text-align:center;
+  position: relative;
+  top: -10px;
+  left: -20px;
+  color: #fad037;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 441px) {
+  .aboutTitleName a {
+    font-size: 14px;
+  }
+  .aboutTitleName div {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 771px) and (max-height: 1030px) {
+  .aboutTitleName {
+    width: 300px;
+  }
+  
+}
+@media only screen and (min-width:712px) and (max-width: 960px)
+{
+  .aboutY{
+    margin-bottom: 5.8em;
+  }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 700px) {
+  .aboutTitleName {
+    width: 300px;
+  }
+}
+
+/*Table for about works*/
+
+.left-cell {
+  font-size: 0.8em;
+  text-align: right;
+  color: grey;
+  vertical-align: top;
+}
+
+.right-cell {
+  font-size: 0.8em;
+  color: var(--p-up);
+}
+
+/*social icons footer*/
+
+.social-icons-footer {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 220px;
+  display: block;
+}
+
+.social-icon-footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size-footer-s);
+  height: var(--link-size-footer-s);
+  margin: 3px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  text-decoration: none;
+  float: left;
+}
+
+.social-icon-footer i {
+  margin: auto;
+  font-size: 15px;
+  color: #fff;
+}
+
+.social-icon-footer:hover i {
+  color: #000000;
+}
+
+/*Responsive*/
+
+@media (min-width: 60rem) {
+  .social-icons-footer {
+    width: 280px;
+  }
+  .social-icon-footer {
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
+  }
+  .social-icon-footer i {
+    font-size: 20px;
+  }
+}
+
+/*Animations*/
+
+.social-icon-footer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgb(100, 248, 233);
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
+}
+
+/*
+---------------------------
+      SVG ANIMATION
+---------------------------
+*/
+
+@keyframes plantone {
+  0%,
+  to {
+    transform: scaleY(1) rotate(0deg);
+  }
+  50% {
+    transform: scaleY(1.02) rotate(1deg);
+  }
+}
+
+@keyframes steam {
+  0% {
+    transform: scaleY(1.02);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes head {
+  0%,
+  to {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes shapemask {
+  0% {
+    transform: scaleX(1) scaleY(1) rotate(0deg);
+  }
+  25% {
+    transform: scaleX(1.03) rotate(0deg);
+  }
+  50% {
+    transform: scaleY(1.03) rotate(0deg);
+  }
+}
+
+@keyframes sleave {
+  0%,
+  to {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes arm {
+  0%,
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+  85% {
+    transform: translateX(-15px) rotate(0deg);
+  }
+}
+
+@keyframes armright {
+  0%,
+  10%,
+  80%,
+  to {
+    transform: rotate(0deg);
+  }
+  40%,
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes veraslidein {
+  0% {
+    transform: translateX(1200px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+  90% {
+    transform: translateX(42px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+
+@keyframes verascalein {
+  0%,
+  15% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.98);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes veradropin {
+  0% {
+    transform: translateY(-1200px);
+  }
+  50% {
+    transform: translateY(45px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(3px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#verapc.svgmate .plant {
+  animation-name: plantone;
+  transform-origin: 1907.25px 884.25px;
+  transition: all 0.5s;
+}
+
+#verapc.svgmate .plant:hover {
+  opacity: 0.5;
+}
+
+#verapc.svgmate .arm,
+#verapc.svgmate .plant,
+#verapc.svgmate .steam {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#verapc.svgmate .steam {
+  transition: all 0.5s;
+  animation-name: steam;
+}
+
+#verapc.svgmate .arm {
+  animation-name: arm;
+  animation-duration: 5s;
+  transform-origin: 1009.149px 711.625px;
+}
+
+.container.about-upper.pt-5{
+  max-width: 100%;
+}
+
+@media screen and (min-width: 711px) and (max-width: 1000px){
+  .imgCol{
+    width: 35%;
+  }
+  .aboutTitleName {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 711px) and (max-width: 850px){
+  .imgCol{
+    width: 40%;
+  }
+  .aboutTitleName {
+    width: 60%;
+  }
+}
