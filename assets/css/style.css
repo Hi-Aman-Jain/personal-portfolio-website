@@ -229,16 +229,17 @@ html {
 }
 
 .navbar-brand {
-  font-family:cursive;
-  font-size: 25px;
+  font-family:Agustina;
+  font-size: 40px;
   font-weight: bold;
+  padding-top: 10px;
 }
 
 .navbar {
   color: #000000;
   background-color: #fff;
   z-index: 2;
-  box-shadow: 0 2px 2px rgb(230, 230, 230);
+  box-shadow: 0 2px 2px rgb(246, 246, 246);
 }
 
 /* Dark Mode toggle switch button */
@@ -278,7 +279,7 @@ html {
 .dark_toggler:checked:before {
   transform: translate(150%);
   transition: all 0.9s;
-  background-color: #bb86fc;
+  background-color: #dbc5f7;
 }
 /* end of dark mode toggle switch button */
 
@@ -300,11 +301,12 @@ html[light-mode="dark"] {
 
 .dark-theme .navbar-nav .nav-link,
 .dark-theme .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.598);
+  font-weight: 100%;
 }
 
-.dark-theme .nav-link:hover{
-color: #ffffff !important;
+html[light-mode="dark"] .navbar-brand:hover{
+  color: #f90160 !important;
 }
 
 .dark-theme .first,
@@ -402,7 +404,7 @@ color: #ffffff !important;
       content: "";
       display: block;
       margin-left: auto;
-      margin-right: auto;
+      margin-right:auto;
       height: 0.15em;
       bottom: 0;
       width: 0%;
@@ -411,12 +413,13 @@ color: #ffffff !important;
   }
   
   .nav-item:hover::after {
-      width: 50%;
+      width: 60%;
       
   }
 
   li.nav-item {
       text-align: center;
+      font-size:larger;
   }
   a.nav-link {
       padding: 6px 21px !important;
@@ -437,6 +440,9 @@ html[light-mode="light"] .nav-link:hover{
 }
 html[light-mode="light"] .navbar-brand:hover{
   color: #000000 !important;
+}
+html[light-mode="light"] .navbar-brand{
+  color: #f90160 !important;
 }
 
 @media (min-width: 992px) {
