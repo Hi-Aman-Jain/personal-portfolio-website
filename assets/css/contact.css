@@ -115,4 +115,13 @@ html {
 
 .contact-item-link { transition: var(--transition-1); }
 
+.calender{
+  font-size: 5rem;
+  padding: 15px;
+  border-width: 0cap;
+  color: #a876ed;
+  
+}
+
+
 
