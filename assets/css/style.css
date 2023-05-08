@@ -927,10 +927,11 @@ form {
 
 /* to make the navbar open full screen on mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 85px) {
   .collapse navbar-collapse {
       display: flex;
       justify-content: center;
+      
   }
   .footer {
       padding-top: 10px;
@@ -946,7 +947,7 @@ form {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 85px) {
   .collapse navbar-collapse {
       display: flex;
       justify-content: center;
@@ -962,11 +963,12 @@ form {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 85%) {
   .collapse navbar-collapse {
       display: flex;
       justify-content: center;
   }
+  
   #navbar-content {
       margin-top: -180px;
       height: 120vh;
@@ -978,7 +980,7 @@ form {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 85px) {
   .collapse navbar-collapse {
       display: flex;
       justify-content: center;

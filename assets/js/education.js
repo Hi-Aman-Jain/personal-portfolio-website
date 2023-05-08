@@ -8,33 +8,33 @@ const moocscards = [
   {
     title: "Web Development",
     cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
+    moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
   },
   {
     title: "Python-Django",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
+    cardImage: "assets/images/education-page/regexlogo.jpg",
+    moocLink: "https://drive.google.com/file/d/1uCrmn28WUVQ_knmsgm2CDJ9N8D0qQsND/view?usp=share_link",
   },
   {
     title: "Google Cloud Fundamentals",
     cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
+    moocLink: "https://drive.google.com/file/d/1yn91sGktsF-xesq4gsWt9vjHH8alHSaj/view?usp=share_link",
   },
   {
     title: "MEARN Stack",
-    cardImage: "assets/images/education-page/edx.svg",
-    moocLink: "https://www.edx.org/learn/reactjs",
+    cardImage: "assets/images/education-page/regexlogo.jpg",
+    moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
   },
   {
     title: "Google Cloud Computing Foundation",
-    cardImage: "assets/images/jecrc-foundation-logo-1jecrc-foundation-logo",
-    moocLink: 
-      "",
+    cardImage: "assets/images/education-page/jecrclogo.jpg",
+    moocLink: "https://drive.google.com/file/d/102_FXigS-BLkDH2f1AudX2E0r4zXBEQ3/view?usp=share_link"
+      
   },
   {
     title: "Essential Google Cloud Infrastucture",
     cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
+    moocLink: "https://drive.google.com/file/d/1EWaBXb-MedcjvqXVCiigsLqL9hvRI8x2/view?usp=share_link",
   },
 ];
 
