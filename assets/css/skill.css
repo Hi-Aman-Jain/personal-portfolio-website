@@ -19,6 +19,7 @@ html[light-mode="dark"] {
   --shadow-col2: #1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
+  
 }
 
 html {
@@ -223,7 +224,7 @@ html,body{
   border-right-width: 0px;
   border-top-color: #000;
   opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
+  animation: showText2 0.5s 2.5s linear forwards;
 }
 .progress-line span::after{
   position: absolute;
@@ -287,7 +288,7 @@ html,body{
   padding-bottom: 20%;
 }
 .wrapper .card{
-  background: #fff;
+  background: #42d32f;
   width: calc(33% - 20px);
   height: 300px;
   border-radius: 5px;
@@ -295,7 +296,7 @@ html,body{
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px rgba(252, 250, 250, 0.692);
 }
 .wrapper .card .circle{
   position: relative;
@@ -313,7 +314,7 @@ html,body{
 .card .circle .box{
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: #f73131;
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0.8);
   transition: all 0.2s;
@@ -323,7 +324,7 @@ html,body{
 }
 .card .circle .box span,
 .wrapper .card .text{
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #7c0be5, #a31155);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
