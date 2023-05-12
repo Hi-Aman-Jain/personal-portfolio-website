@@ -553,6 +553,10 @@ blockquote {
 
 .alignment{
   padding-left: 20px;
+
+  .js--fadeInRight{
+    height: 100px;
+  }
   
 }
 
@@ -670,7 +674,9 @@ blockquote {
   }
                                                   /* Second  */
   .timelineHeading2{
-    font-size: 94%;
+    font-size: 122%;
+     
+
   }
   .date2{
     padding: 0px;
@@ -725,7 +731,7 @@ blockquote {
  
   @media (max-width:502px){
     .timelineHeading2{
-      font-size: 120%;
+      font-size: 122%;
     }
   }
   @media (max-width:582px){
