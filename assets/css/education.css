@@ -82,7 +82,7 @@ html {
 }
 
 .s2 .head {
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: bold;
 } 
 
@@ -385,7 +385,7 @@ header p {
 .timeline {
   position: relative;
   font-weight: bold;
-}
+  }
 
 /* Draws line */
 .timeline::before {
@@ -500,7 +500,7 @@ header p {
 }
 
 .timeline-card {
-  padding: 0 !important;
+  padding: 0 40px;
 }
 
 .timeline-card p {
@@ -508,7 +508,7 @@ header p {
 }
 
 .timeline-card a {
-  margin-left: 20px;
+  margin-left:0 20px;
 }
 
 .timeline-item .timeline-img-header {

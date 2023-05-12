@@ -7,34 +7,44 @@ const moocscards = [
   
   {
     title: "Web Development",
-    cardImage: "assets/images/education-page/udemy.svg",
+    cardImage: "assets/images/education-page/udemy-logo.jpg",
     moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
   },
   {
-    title: "Python-Django",
-    cardImage: "assets/images/education-page/regexlogo.jpg",
-    moocLink: "https://drive.google.com/file/d/1uCrmn28WUVQ_knmsgm2CDJ9N8D0qQsND/view?usp=share_link",
+    title: "Data Structure And Algorithm using C & C++",
+    cardImage: "assets/images/education-page/udemy-logo.jpg",
+    moocLink: "https://www.udemy.com/certificate/UC-40555f72-18a7-4e6b-9888-629b75828aa2/",
   },
   {
     title: "Google Cloud Fundamentals",
-    cardImage: "assets/images/education-page/coursera2.svg",
+    cardImage: "assets/images/education-page/courseralogo.jpg",
     moocLink: "https://drive.google.com/file/d/1yn91sGktsF-xesq4gsWt9vjHH8alHSaj/view?usp=share_link",
   },
   {
-    title: "MEARN Stack",
-    cardImage: "assets/images/education-page/regexlogo.jpg",
-    moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
+    title: "Essential Google Cloud Infrastucture",
+    cardImage: "assets/images/education-page/courseralogo.jpg",
+    moocLink: "https://drive.google.com/file/d/1EWaBXb-MedcjvqXVCiigsLqL9hvRI8x2/view?usp=share_link",
   },
   {
     title: "Google Cloud Computing Foundation",
-    cardImage: "assets/images/education-page/jecrclogo.jpg",
+    cardImage: "assets/images/education-page/jecrclogo2.jpg",
     moocLink: "https://drive.google.com/file/d/102_FXigS-BLkDH2f1AudX2E0r4zXBEQ3/view?usp=share_link"
       
   },
   {
-    title: "Essential Google Cloud Infrastucture",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://drive.google.com/file/d/1EWaBXb-MedcjvqXVCiigsLqL9hvRI8x2/view?usp=share_link",
+    title: "Python-Django",
+    cardImage: "assets/images/education-page/regexlogo2.jpg",
+    moocLink: "https://drive.google.com/file/d/1uCrmn28WUVQ_knmsgm2CDJ9N8D0qQsND/view?usp=share_link",
+  },
+  {
+    title: "MEARN Stack",
+    cardImage: "assets/images/education-page/regexlogo2.jpg",
+    moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
+  },
+  {
+    title: "Microsoft Excel - Beginner to Advance",
+    cardImage: "assets/images/education-page/udemy-logo.jpg",
+    moocLink: "https://www.udemy.com/certificate/UC-24998901-57da-40dd-9336-34803b82f6fa/",
   },
 ];
 

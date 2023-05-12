@@ -31,6 +31,7 @@ html {
   .dropdown {
     position: absolute;
     padding-right: 3.5rem;
+    margin-bottom: 100%;
   }
   .godown {
     z-index: 1;
@@ -47,6 +48,7 @@ html {
 
 section > div {
   padding-top: 7rem !important;
+  margin-bottom: 6%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -82,7 +84,9 @@ section > div {
   padding-right: 4rem;
   margin: 0 auto;
 }
-
+.pre-heading{
+font-size: larger;
+}
 .section {
   padding: 20px;
   padding-left: 0;
@@ -128,22 +132,32 @@ section > div {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-html,body{
+
+.tech-skill{
+  color: var(--bg-txt-img);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 10%;
+  
+}
+/* html,body{
   display: grid;
   height: 100%;
   place-items: center;
   background: #6665ee;
-}
-::selection{
+} */
+/* ::selection{
   color: #ca3a3a;
   background: #6665ee;
-}
+} */
 .skill-bars{
   padding: 25px 30px;
   width: 600px;
-  background: #bbb8b8;
+  height: 500px;;
+  background: #bea7fc;
   box-shadow: 5px 5px 20px rgba(254, 254, 254, 0.2);
   border-radius: 20px;
+  margin-bottom: 70%;
 }
 .skill-bars .bar{
   margin: 20px 0;
@@ -168,8 +182,7 @@ html,body{
 }
 
 .skill-bars{
-
-  margin-top: 15%;
+  margin-top:3%;
 }
 .skill-bars .bar .progress-line{
   height: 10px;
@@ -201,16 +214,22 @@ html,body{
   width: 90%;
 }
 .bar .progress-line.css span{
+  width: 80%;
+}
+.bar .progress-line.javascript span{
+  width: 65%;
+}
+.bar .progress-line.web-development span{
+  width: 55%;
+}
+.bar .progress-line.cplus span{
   width: 60%;
 }
-.bar .progress-line.jquery span{
-  width: 85%;
+.bar .progress-line.java span{
+  width: 70%;
 }
-.bar .progress-line.python span{
-  width: 50%;
-}
-.bar .progress-line.mysql span{
-  width: 75%;
+.bar .progress-line.dsa span{
+  width: 60%;
 }
 .progress-line span::before{
   position: absolute;
@@ -222,7 +241,7 @@ html,body{
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-color: #000;
+  border-top-color: #000000;
   opacity: 0;
   animation: showText2 0.5s 2.5s linear forwards;
 }
@@ -248,118 +267,141 @@ html,body{
   content: "90%";
 }
 .progress-line.css span::after{
+  content: "80%";
+}
+.progress-line.javascript span::after{
+  content: "65%";
+}
+.progress-line.web-development span::after{
+  content: "55%";
+}
+.progress-line.cplus span::after{
   content: "60%";
 }
-.progress-line.jquery span::after{
-  content: "85%";
+.progress-line.java span::after{
+  content: "70%";
 }
-.progress-line.python span::after{
-  content: "50%";
-}
-.progress-line.mysql span::after{
-  content: "75%";
+.progress-line.dsa span::after{
+  content: "60%";
 }
 
-/* ----------Animated Skills Bar ended here ---------- */
 
-/* circular Skills Bar starts here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
+/* Animated circular Bar starts here */
+
+* {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* body{
+
+.skill-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.roll-skill {
+  width: 180px;
+  height: 160px;
+  position: relative;
+  margin-bottom: 0 40px; 
+  padding-left: 170%;
+  
+  
+  
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(223, 140, 140, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding-top: 20px;
-  } */
-.wrapper{
-  width: 800px;
-  display: flex;
-  flex-wrap:wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-left:17%;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
-.wrapper .card{
-  background: #42d32f;
-  width: calc(33% - 20px);
-  height: 300px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  box-shadow: 0px 10px 15px rgba(252, 250, 250, 0.692);
-}
-.wrapper .card .circle{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  cursor: default;
-}
-.card .circle .box,
-.card .circle .box span{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-.card .circle .box{
-  height: 100%;
-  width: 100%;
-  background: #f73131;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  transition: all 0.2s;
-}
-.card .circle:hover .box{
-  transform: translate(-50%, -50%) scale(0.91);
-}
-.card .circle .box span,
-.wrapper .card .text{
-  background: -webkit-linear-gradient(left, #7c0be5, #a31155);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.circle .box span{
-  font-size: 38px;
-  font-family: sans-serif;
+
+#number {
   font-weight: 600;
-  transform: translate(-45%, -45%);
-  transition: all 0.1s;
+  color: #555;
 }
-.card .circle:hover .box span{
-  transform: translate(-45%, -45%) scale(1.09);
+
+.circle {
+  fill: none;
+  stroke-width: 40px;
+  stroke-dasharray: 472;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
-.card .text{
-  font-size: 20px;
-  font-weight: 600;
+
+
+
+/* Skills */
+#java.circle {
+  stroke: #f44336;
 }
-@media(max-width: 753px){
-  .wrapper{
-    max-width: 700px;
+
+#cpp.circle {
+  stroke: #4caf50;
+}
+
+#python.circle {
+  stroke: #2196f3;
+}
+
+/* Animations */
+@keyframes anim-java {
+  100% {
+    stroke-dashoffset: 472 - (472 * 65 / 100);
   }
-  .wrapper .card{
-    width: calc(50% - 20px);
+}
+
+@keyframes anim-cpp {
+  100% {
+    stroke-dashoffset: 472 - (472 * 80 / 100);
+  }
+}
+
+@keyframes anim-python {
+  100% {
+    stroke-dashoffset: 472 - (472 * 90 / 100);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skill-row {
+    flex-direction: column;
     margin-bottom: 20px;
   }
-}
-@media(max-width: 505px){
-  .wrapper{
-    max-width: 500px;
-  }
-  .wrapper .card{
-    width: 100%;
+  
+  .roll-skill {
+    margin: 0 0 20px 0;
   }
 }
 
-/* Circular Progress Bar ended here */
-
-
+@media (max-width: 480px) {
+  .outer, .inner {
+    height: 120px;
+    width: 120px;
+    padding: 15px;
+  }
+  
+  #number {
+    font-size: 24px;
+  }
+}

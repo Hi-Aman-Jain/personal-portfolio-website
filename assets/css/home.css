@@ -1,7 +1,7 @@
 /*Declaration of CSS variables for light/dark theme*/
 
 html[data-theme="light"] {
-  --col-icon: black;
+  --col-icon: #081629;
   --col-bd-radius:rgb(2, 2, 2);
   --col-box-shadow:#000000 2px 2px 4px, 
   #4D4D4D -2px -2px 4px;
@@ -29,9 +29,9 @@ html[data-theme="dark"] {
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
   --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
-  --col-icon-dribbble: #ea4c89;
+ 
   --col-icon-linkedin: #0e76a8;
-  --col-icon-kaggle: #41aff3;
+  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -51,19 +51,24 @@ body{
 }
 
 .section {
-  background-color: rgb(63, 25, 170);
+  background-color:#081629;
   justify-content: center;
   align-items: center;
+}
+.meimage{
+  margin-left: 60%;
+  margin-top: -20%;
+  padding-top: -7%; 
 }
 
 .text .header {
   font-weight: bold;
-  font-size: larger;
+  font-size:2.5cm;
   
 }
 
 .text {
-  font-size: 5px;
+  font-size: 10%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -73,6 +78,7 @@ body{
 .animated-text span {
   display: none;
   line-height: 1;
+  top: 40%;
 }
 
 .animated-text span.active {
@@ -130,7 +136,7 @@ a.socialicon {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: #fff;
+  background-color: #081629;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -146,7 +152,7 @@ a.socialicon {
 
 /* Social icon in dark mode */
 html[light-mode="dark"] .socialicon{
-  background-color: #141516;
+  background-color: #071625;
 }
 
 .kaggle i {
@@ -328,105 +334,6 @@ html[light-mode="dark"] .github-icon{
   0% { transform: rotate(10deg); }
   100% { transform: rotate(-10deg); }
  }
-
- /*
-  --------------------------
-     DRIBBBLE MICROANIMATION
-  --------------------------
-  */
-  
-  .dribbble-icon{
-    width: 30px;
-    height: 30px;
-    margin-left:16px;
-    margin-top: 20px;
-  }
-  
-  .dribbble:hover .dribbble-icon{ 
-      animation: dribbble-bounce .4s ease infinite;
-      transform: rotate(360deg);
-      transition: all 9s ease-in-out 0s;
-  }
-  
-  @keyframes dribbble-bounce {
-    from, to {
-      margin-top: 20px;
-    }
-    50% { 
-      margin-top: 15px; 
-    }
-    
-    75%{
-      margin-top: 15px;
-    }
-  }
-  
-  /*
-  --------------------------
-     CODEFORCES MICROANIMATION
-  --------------------------
-  */
-  
-  .codeforces-icon{
-    margin-right: 6px;
-    margin-top: 6px;
-  }
-  
-  .codeforces-icon .red {
-    height:4px;
-    y:2.5px;
-    
-  }
-  .codeforces:hover .red{
-    animation: red-animation 2.5s infinite alternate;
-  }
-  
-  
-  .codeforces-icon .yellow{
-    height:5px;
-    y:1.5px;
-    
-  }
-  
-  .codeforces:hover .yellow{
-    animation: yellow-animation 2s infinite alternate-reverse;
-  }
-  
-  .codeforces:hover .blue{
-    animation: blue-animation 2s  infinite alternate;
-  }
-  
-  @keyframes red-animation{
-    0%{
-       y:0px
-    }
-    0%{
-        height:6px;
-        y:0.5px;
-    }
-  }
-  
-  @keyframes yellow-animation{
-    0%{
-        y:0px;
-    }
-    0%{
-        height:6px;
-        y:0.5px;
-    }
-  }
-  
-  @keyframes blue-animation{
-    0%{
-        y:0px;
-    }
-    0%{
-        height:3px;
-        y:3.5;
-    }
-  }
-  
-  
 
 /*
 ----------------------------

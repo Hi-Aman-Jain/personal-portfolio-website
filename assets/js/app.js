@@ -3,7 +3,7 @@
 // Sweet Alert CDN through JS
 let script = document.createElement("script");
 script.type = 'text/javascript';
-script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
+script.src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js";
 document.body.appendChild(script);
 
 // Header
@@ -28,7 +28,8 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="skill.html">Skill</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="contact.html">Contact</a></li>
+   <li class="nav-item 
+   nav-item-hover"><a class="nav-link" href="contact.html">Contact</a></li>
    <li class="nav-item">
    <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
    </li>
@@ -140,6 +141,7 @@ let footer = $(`
               </div>
                 <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
                   <input id="name" type="text" name="name" placeholder="Your Name" required/>
+                  <input id="name" type="text" name="phone_no." placeholder="Mobile number" required/>
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
               
@@ -216,7 +218,7 @@ let footer = $(`
     </svg>
     </a>
 
-    <a class="social-button linkedin" href="" target="_blank" >
+    <a class="social-button linkedin" href="http://www.linkedin.com/in/aman-jain-btech-it24" target="_blank" >
     <!-- svg code for linkedin icon -->
       <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
         stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
@@ -228,7 +230,7 @@ let footer = $(`
 
 
 
-    <a class="social-button instagram" href="" target="_blank" >
+    <a class="social-button instagram" href="https://www.instagram.com/invites/contact/?i=15fdf5rij8a6q&utm_content=3cpuu06" target="_blank" >
     <!-- svg code for instagram icon -->
       <svg class="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5"
         style="enable-background:new 0 0 202.5 202.5;">
@@ -239,7 +241,7 @@ let footer = $(`
       </svg>
     </a>
 
-    <a class="social-button github" href="#" target="_blank">
+    <a class="social-button github" href="https://github.com/settings/profile" target="_blank">
     <!-- SVG code for Github icon -->
     <svg class="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
         <!-- body -->
@@ -409,17 +411,6 @@ function toggle_light_mode() {
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
 
-// function to update swiper bullets
-function updateColorOfSwiperBullets(lightMode) {
-  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
-    if (lightMode == "light") {
-      bullet.style.backgroundColor = "blue";
-    } else {
-      bullet.style.backgroundColor = "white";
-    }
-  });
-}
-
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
     app.setAttribute("light-mode", "dark");
@@ -449,17 +440,17 @@ $(function submitAnimation() {
 
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
-      swal("Error !","Please enter a valid name !","error");
+      swal("Error !", "Please enter a valid name !", "error");
       return;
     }
     // Check if the email field is empty or email is not valid ex: test@@email.com
     else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      swal("Error !","Please enter a valid email !","error");
+      swal("Error !", "Please enter a valid email !", "error");
       return;
     }
     // Check if the message field is empty
     else if (text.value == "") {
-      swal("Error !","Please enter a valid message !","error");
+      swal("Error !", "Please enter a valid message !", "error");
       return;
     }
     else {

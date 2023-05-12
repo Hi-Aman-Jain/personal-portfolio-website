@@ -67,8 +67,8 @@ body {
   margin-left: 40px;
 }
 .my-about-wrapper .about{
-  font-size: 90px;
-  margin-bottom:-90px;
+  font-size: 85px;
+  margin-top: 10%;
   font-weight:bold;
   color: var(--head-col);
 }
@@ -83,13 +83,14 @@ body {
   top: 70px;
   left: 25px;
   color: #4e00bb;
+  margin-top: -110px;
 }
 
 /*Responsive*/
 
 @media only screen and (max-width: 441px) {
   .aboutTitleName a {
-    font-size: 14px;
+    font-size: px;
   }
   .aboutTitleName div {
     font-size: 12px;
