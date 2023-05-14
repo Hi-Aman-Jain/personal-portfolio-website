@@ -27,11 +27,18 @@ html {
 }
 /*Main section*/
 
+.dropdown {
+
+margin-top: 6.5%;
+
+}
+
 @media (max-width: 766px) {
   .dropdown {
     position: absolute;
     padding-right: 3.5rem;
-    margin-bottom: 100%;
+    margin-bottom:-70% ;
+   
   }
   .godown {
     z-index: 1;
@@ -48,7 +55,7 @@ html {
 
 section > div {
   padding-top: 7rem !important;
-  margin-bottom: 6%;
+  margin-bottom: -8%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -99,6 +106,7 @@ font-size: larger;
 .skill_head {
   font-weight: bold;
   font-size: 70px;
+  padding-bottom: 5%;
 }
 
 /*color of skill page headings*/
@@ -138,6 +146,7 @@ font-size: larger;
   font-size: 50px;
   font-weight: bold;
   padding-left: 10%;
+  margin-top: 25%;
   
 }
 /* html,body{
@@ -157,7 +166,7 @@ font-size: larger;
   background: #bea7fc;
   box-shadow: 5px 5px 20px rgba(254, 254, 254, 0.2);
   border-radius: 20px;
-  margin-bottom: 70%;
+  margin-bottom: 9%;
 }
 .skill-bars .bar{
   margin: 20px 0;
@@ -288,18 +297,31 @@ font-size: larger;
 
 /* Animated circular Bar starts here */
 
-*{
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+.soft-skill{
+  color: var(--bg-txt-img);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 66%;
+  margin-top: -48.5%;
+
 }
 
-.roll-skill {
+.skill2-bars{
+  padding-left: 52%;
+  margin-top: 1%;
+}
+.skill2-bars .progress-bar{
+  margin: 30px 25px;
+
+
+}
+.progress-bar {
   width: 160px;
   height: 160px;
   position: relative;
-  margin: 20px;
   display: inline-block;
+  margin-right: 20px;
+  
 }
 
 .outer {
@@ -308,7 +330,7 @@ font-size: larger;
   border-radius: 50%;
   padding: 20px;
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-              -6px -6px 10px -1px rgba(255, 255, 255,0.7);
+    -6px -6px 10px -1px rgba(255, 255, 255,0.7);
 }
 
 .inner {
@@ -316,38 +338,35 @@ font-size: larger;
   width: 120px;
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(0,0, 0, 0.2),
-              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-              -0.5px -0.5px 0px rgba (255, 255, 255, 1),
-              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 4px 4px 6px -1px rgba(49, 10, 97, 0.984),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba (255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0,0.15),
+    0px 12px 10px -10px rgba(221, 57, 57, 0.968);
 }
 
-#number {
+.label {
+  font-size: 15px;
   font-weight: 600;
-  color: #555;
+  color: #f8f2f2;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fdfbfb;
 }
 
 circle {
-  fill: none;
+  fill:none;
+  stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim 2s linear forwards;
-}
-
-#java circle {
-  stroke: linear-gradient(to right, #f44336 50%, transparent 50%);
-}
-
-#python circle {
-  stroke: linear-gradient(to right, #2196f3 50%, transparent 50%);
-}
-
-#cplus circle {
-  stroke: linear-gradient(to right, #4caf50 50%, transparent 50%);
+  stroke-dashoffset: 472 ;
+  animation: anim 2.5s linear forwards;
 }
 
 svg {
