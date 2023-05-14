@@ -288,28 +288,18 @@ font-size: larger;
 
 /* Animated circular Bar starts here */
 
-* {
+*{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.skill-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
 .roll-skill {
-  width: 180px;
+  width: 160px;
   height: 160px;
   position: relative;
-  margin-bottom: 0 40px; 
-  padding-left: 170%;
-  
-  
-  
+  margin: 20px;
+  display: inline-block;
 }
 
 .outer {
@@ -317,8 +307,8 @@ font-size: larger;
   width: 160px;
   border-radius: 50%;
   padding: 20px;
-  box-shadow: 6px 6px 10px -1px rgba(223, 140, 140, 0.15),
-              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255,0.7);
 }
 
 .inner {
@@ -328,9 +318,9 @@ font-size: larger;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0, 0, 0.2),
               inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-              -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+              -0.5px -0.5px 0px rgba (255, 255, 255, 1),
               0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
               0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
@@ -340,68 +330,34 @@ font-size: larger;
   color: #555;
 }
 
-.circle {
+circle {
   fill: none;
-  stroke-width: 40px;
+  stroke-width: 20px;
   stroke-dasharray: 472;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
 }
 
-
-
-/* Skills */
-#java.circle {
-  stroke: #f44336;
+#java circle {
+  stroke: linear-gradient(to right, #f44336 50%, transparent 50%);
 }
 
-#cpp.circle {
-  stroke: #4caf50;
+#python circle {
+  stroke: linear-gradient(to right, #2196f3 50%, transparent 50%);
 }
 
-#python.circle {
-  stroke: #2196f3;
+#cplus circle {
+  stroke: linear-gradient(to right, #4caf50 50%, transparent 50%);
 }
 
-/* Animations */
-@keyframes anim-java {
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
   100% {
-    stroke-dashoffset: 472 - (472 * 65 / 100);
-  }
-}
-
-@keyframes anim-cpp {
-  100% {
-    stroke-dashoffset: 472 - (472 * 80 / 100);
-  }
-}
-
-@keyframes anim-python {
-  100% {
-    stroke-dashoffset: 472 - (472 * 90 / 100);
-  }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .skill-row {
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .roll-skill {
-    margin: 0 0 20px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .outer, .inner {
-    height: 120px;
-    width: 120px;
-    padding: 15px;
-  }
-  
-  #number {
-    font-size: 24px;
+    stroke-dashoffset: 165;
   }
 }

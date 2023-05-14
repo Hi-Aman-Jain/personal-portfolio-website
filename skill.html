@@ -238,8 +238,9 @@
         
           <!-- /* ----------Animated Skills Bar ended here ---------- */ -->
 
-          <!-- Circular Progress Bar starts here -->
-          <div class="roll-skills">
+          
+          
+          <!-- <div class="roll-skills">
   <div class="roll-skill">
     <div class="outer">
       <div class="inner">
@@ -293,7 +294,99 @@
       <circle cx="80" cy="80" r="70" stroke-linecap="round" />
     </svg>
   </div>
+</div> -->
+
+<!-- Circular Progress Bar starts here -->
+
+<div class="roll-skill">
+  <div class="outer">
+    <div class="inner">
+      <div id="java" class="number">0%</div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+      <defs>
+        <lineargradient id="javaGradientColor">
+          <stop offset="0%" stop-color="#e91e63" />
+          <stop offset="100%" stop-color="#673ab7" />
+        </lineargradient>
+      </defs>
+      <circle id="javaCircle" cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <div class="outer">
+    <div class="inner">
+      <div id="cplus" class="number">0%</div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+      <defs>
+        <lineargradient id="cplusGradientColor">
+          <stop offset="0%" stop-color="#2196f3" />
+          <stop offset="100%" stop-color="#4caf50" />
+        </lineargradient>
+      </defs>
+      <circle id="cplusCircle" cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <div class="outer">
+    <div class="inner">
+      <div id="dsa" class="number">67%</div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+    <defs>
+      <linearGradient id="GradientColorJava">
+        <stop offset="0%" />
+        <stop offset="100%" />
+      </linearGradient>
+    </defs>
+    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+  </svg>
 </div>
+  
+  <div class="outer">
+    <div class="inner">
+      <div id="python" class="number">45%</div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+      <defs>
+        <linearGradient id="pythonGradientColor">
+          <stop offset="0%" stop-color="#ff9800" />
+          <stop offset="100%" stop-color="#f44336" />
+        </linearGradient>
+      </defs>
+      <circle id="pythonCircle" cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+  </div>
+</div>
+
+
+
+<script>
+  function animateCircle(circleId, gradientId, numberId, targetValue, intervalTime) {
+    let circle = document.getElementById(circleId);
+    let number = document.getElementById(numberId);
+    let counter = 0;
+    let increment = targetValue / (1000 / intervalTime);
+    let interval = setInterval(() => {
+      if (counter >= targetValue) {
+        clearInterval(interval);
+        counter = targetValue;
+      }
+      number.innerHTML = counter.toFixed() + "%";
+      let dashOffset = 472 - (472 * counter) / 100;
+      circle.style.strokeDashoffset = dashOffset;
+      counter += increment;
+    }, intervalTime);
+    circle.style.stroke = "url(#" + gradientId + ")";
+  }
+
+  animateCircle("javaCircle", "javaGradientColor", "java", 65, 30);
+  animateCircle("cplusCircle", "cplusGradientColor", "cplus", 80, 30);
+  animateCircle("pythonCircle", "pythonGradientColor", "python", 45, 30);
+</script>
+
 
           
 
