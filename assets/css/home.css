@@ -56,16 +56,21 @@ body{
   align-items: center;
 }
 .meimage{
-  margin-left: 60%;
-  margin-top: -20%;
-  padding-top: -7%; 
-}
-
-.text .header {
-  font-weight: bold;
-  font-size:2.5cm;
+  margin-left: 50%;
+  margin-top: -50%;
   
 }
+
+
+.header {
+  font-weight: bold;
+  font-size:2.6cm;
+  color: #f579ab;}
+
+
+  .header:hover{
+    color:#b494eb;
+  }
 
 .text {
   font-size: 10%;
@@ -79,6 +84,8 @@ body{
   display: none;
   line-height: 1;
   top: 40%;
+  color:#b6a2f0;
+  font-weight: bolder;
 }
 
 .animated-text span.active {
@@ -136,7 +143,7 @@ a.socialicon {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: #081629;
+  background-color: #02132b;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -151,37 +158,6 @@ a.socialicon {
 }
 
 /* Social icon in dark mode */
-html[light-mode="dark"] .socialicon{
-  background-color: #071625;
-}
-
-.kaggle i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
-
-.socialicon.kaggle{
-  color:var(--col-icon-kaggle);
-}
-
-.socialicon:after {
-  content: "";
-  width: var(--link-size);
-  height: var(--link-size);
-  position: absolute;
-  transform: translate(0, var(--link-size));
-  border-radius: 50%;
-  transition: var(--trans-props);
-  
-}
-
-.socialicon.kaggle:after {
-  background-color: #41aff3;
-  box-shadow: var(--kaggle);
-}
-
 
  /*
 ---------------------------
@@ -508,4 +484,88 @@ a:hover {
   .text{
     margin-top: 1rem;
   }
+}
+
+/* glowing botton css started here */
+
+:root {
+  --page-background: 277deg, 55%, 12%;
+}
+
+button {
+  --text-base: 277deg, 55%, 40%;
+  --text-hover: 307deg, 72%, 86%;
+  --shadow-start: 52deg, 100%, 72%;
+  --shadow-end: 282deg, 90%, 50%;
+  --shadow-inner: 277deg, 90%, 62%;
+  all: unset;
+  color:#f7e87a;
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 0.85em;
+  font-size: 25px;
+  max-width: 100%;
+  width: 12em;
+  background: inherit;
+  background-clip: padding-box;
+  border: 7px solid hsla(var(--text-base), 1);
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s ease-out;
+}
+button::before, button::after {
+  content: "";
+  border-radius: inherit;
+  transition: inherit;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+button::before {
+  inset: -0.2em;
+  z-index: -1;
+  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  filter: blur(1.2em) saturate(1.2);
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  opacity: 0;
+}
+button::after {
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #fff;
+  mix-blend-mode: overlay;
+  opacity: 0;
+}
+button:hover, button:focus {
+  color: hsla(var(--text-hover), 1);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+  transform: none;
+  opacity: 1;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  place-content: center;
+  place-items: center;
+}
+
+/* body,
+.container {
+  background: hsla(var(--page-background), 1);
+} */
+
+.container {
+  padding-right: 47%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2.5px;
 }
