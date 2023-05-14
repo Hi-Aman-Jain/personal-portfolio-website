@@ -26,17 +26,6 @@ const moocscards = [
     moocLink: "https://drive.google.com/file/d/1EWaBXb-MedcjvqXVCiigsLqL9hvRI8x2/view?usp=share_link",
   },
   {
-    title: "Google Cloud Computing Foundation",
-    cardImage: "assets/images/education-page/jecrclogo2.jpg",
-    moocLink: "https://drive.google.com/file/d/102_FXigS-BLkDH2f1AudX2E0r4zXBEQ3/view?usp=share_link"
-      
-  },
-  {
-    title: "Python-Django",
-    cardImage: "assets/images/education-page/regexlogo2.jpg",
-    moocLink: "https://drive.google.com/file/d/1uCrmn28WUVQ_knmsgm2CDJ9N8D0qQsND/view?usp=share_link",
-  },
-  {
     title: "MEARN Stack",
     cardImage: "assets/images/education-page/regexlogo2.jpg",
     moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
@@ -103,7 +92,7 @@ const showCards = () => {
                   </div>
                 </div>
                 <div class="card-body">
-                    <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">${title}</h6>
+                    <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:16px;">${title}</h6>
                 </div>
             </div>
         </div>        
@@ -113,26 +102,6 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-/* Badges*/
-
-const bagdes = document.querySelector(".badges");
-const badgesection = [
-  {
-    title: "Google Developer Essentials",
-    image: "assets/images/education-page/badge1.png",
-    description: "Earned May 20, 2020",
-  },
-  {
-    title: "VM Migration",
-    image: "assets/images/education-page/badge2.png",
-    description: "Earned June 20, 2020",
-  },
-  {
-    title: "G Suite Essentials",
-    image: "assets/images/education-page/badge3.png",
-    description: "Earned July 20, 2020",
-  },
-];
 
 const showCards1 = () => {
   let output = "";
