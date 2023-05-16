@@ -54,6 +54,7 @@ html {
     z-index: 3;
     padding-left: 3.5%;
    
+   
   }
   .godown {
     position: absolute;
@@ -358,7 +359,6 @@ body {
 }
 h1 {
   font-size: 200%;
-  text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
 }
