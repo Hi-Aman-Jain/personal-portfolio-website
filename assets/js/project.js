@@ -6,6 +6,14 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Portfolio Website",
+    cardImage: "assets/images/project-page/portfolio.jpg",
+    description: "It's a unique way to showcase your work and let others know about yourself.",
+    tagimg: "",
+    Previewlink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/portfolio-website",
+  },
+  {
     title: "MERN Bus App",
     cardImage: "assets/images/project-page/school-bus.jpg",
     description: "A quiz app built using basic react.",
@@ -28,14 +36,6 @@ const projects = [
     tagimg: "",
     Previewlink: "",
     Githublink: "https://github.com/Hi-Aman-Jain/mydigitalclock",
-  },
-  {
-    title: "Portfolio Website",
-    cardImage: "assets/images/project-page/portfolio.jpg",
-    description: "A unique way to showcase your work and let others know about yourself.",
-    tagimg: "",
-    Previewlink: "",
-    Githublink: "",
   },
   {
     title: "Calculator",
