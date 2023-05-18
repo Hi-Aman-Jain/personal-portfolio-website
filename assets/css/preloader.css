@@ -6,10 +6,10 @@
 
 :root {
     --atom-size: 400px;
-    --atom-color-hex: #6800a0;
+    --atom-color-hex: #18a000;
     --atom-color-rgb: 217,217,217;
     --nucleus-size: calc(var(--atom-size) / 5);
-    --electron-color-hex: #7f69fa;
+    --electron-color-hex: #b37fed;
     --electron-size : calc(var(--atom-size) / 25);
     --electron-orbit-size : calc(var(--atom-size) / 2.5);
     --electron-speed : 1.2s;
@@ -21,7 +21,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1a0419;
+  background-color: #140b24;
   height: 100%;
   width: 100%;
   display: flex;
@@ -164,14 +164,14 @@
     animation: calc(var(--electron-speed) * 2) electron infinite ease-in-out;
 }
 
-.atom .electron::after { background: #edc056;}
+.atom .electron::after { background: #fcb001;}
 .atom .electron-alpha::after { 
     animation: calc(var(--electron-speed-alpha) * 2) electron infinite ease-in-out; 
-    background: #f57ba1;
+    background: #fd1760;
   }
 .atom .electron-omega::after { 
     animation: calc(var(--electron-speed-omega) * 2) electron infinite ease-in-out; 
-    background: #7bf8c4;
+    background: #01fc93;
   }
 @keyframes electron {
     0% {
