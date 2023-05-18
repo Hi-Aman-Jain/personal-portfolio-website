@@ -306,7 +306,7 @@ html[light-mode="dark"] {
 }
 
 html[light-mode="dark"] .navbar-brand:hover{
-  color: #f90160 !important;
+  color: #f90160 ;
 }
 
 .dark-theme .first,
