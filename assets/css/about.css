@@ -56,15 +56,57 @@ body {
 /* section 2 starts here */
 
 .pre-heading {
-  padding-top: 12%;
-  font-size: large;
-  color: var(--head-col);  
+  padding-top: 10%;
+  font-size: 17.8px;
+  color: var(--head-col);
+  font-family:cursive;  
 }
+
+/* Resume button starts from here */
+
+button {
+  padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#9b0678f5 90deg,var(--c) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .4s linear, color 0s, background-color 2s;
+  outline-offset: .2em;
+}
+button:hover,
+button:focus-visible{
+  --_p: 0px;
+  outline-offset: .1em;
+}
+
+.button-text{
+  color: #41f3e1;
+  z-index: 1;
+  margin-top: -15px;
+}
+
+body {
+  margin: 2;
+  grid-template-columns: auto auto;
+  place-content: center;
+}
+button {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border: none;
+  margin: .1em;
+  width:5px;
+}
+
+/* Resume btton ends here */
 
 .section-2{
   width: 100%;
-  margin-top: -180px;
-  margin-left: 40px;
+  margin-top: -185px;
+  margin-left: 20px;
 }
 .my-about-wrapper .about{
   font-size: 85px;
@@ -116,19 +158,7 @@ body {
   }
 }
 
-/*Table for about works*/
 
-.left-cell {
-  font-size: 0.8em;
-  text-align: right;
-  color: grey;
-  vertical-align: top;
-}
-
-.right-cell {
-  font-size: 0.8em;
-  color: var(--p-up);
-}
 
 /*social icons footer*/
 
