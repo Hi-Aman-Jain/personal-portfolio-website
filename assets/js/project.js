@@ -6,7 +6,7 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Personal Portfolio Website",
     cardImage: "assets/images/project-page/portfolio.jpg",
     description: "It's a unique way to showcase your work and let others know about yourself.",
     tagimg: "",
@@ -14,20 +14,36 @@ const projects = [
     Githublink: "https://github.com/Hi-Aman-Jain/portfolio-website",
   },
   {
-    title: "MERN Bus App",
-    cardImage: "assets/images/project-page/school-bus.jpg",
-    description: "A quiz app built using basic react.",
+    title: "Bulsaye Game",
+    cardImage: "assets/images/project-page/bulsaye_game.jpg",
+    description: "",
     tagimg: "",
     Previewlink: "",
-    Githublink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
+  },
+  {
+    title: "Kill the Bird Game",
+    cardImage: "assets/images/project-page/kill_bird.jpg",
+    description: "In this game you have to shoot down the birds to score points. This is created with HTML And CSS only. No Javascript is needed.",
+    tagimg: "",
+    Previewlink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/Bird_Game",
+  },
+  {
+    title: "API",
+    cardImage: "assets/images/project-page/Api.jpg",
+    description: "",
+    tagimg: "",
+    Previewlink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
   },
   {
     title: "Analog clock",
     cardImage: "assets/images/project-page/analog.jpg",
-    description: "A chess engine for a popular game dev engine.",
+    description: ".",
     tagimg: "",
     Previewlink: "",
-    Githublink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/Analog-clock",
   },
   {
     title: "Digital Clock",
@@ -40,7 +56,7 @@ const projects = [
   {
     title: "Calculator",
     cardImage: "assets/images/project-page/calculator.jpg",
-    description: "Exercise tracker built using basic redux.",
+    description: "",
     tagimg: "",
     Previewlink: "",
     Githublink: "",
@@ -48,22 +64,6 @@ const projects = [
   {
     title: "Google Webpage",
     cardImage: "assets/images/project-page/googleclone.jpg",
-    description: "",
-    tagimg: "",
-    Previewlink: "",
-    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
-  },
-  {
-    title: "simple game",
-    cardImage: "assets/images/project-page/googlelone.jpg",
-    description: "",
-    tagimg: "",
-    Previewlink: "",
-    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
-  },
-  {
-    title: "API",
-    cardImage: "assets/images/project-page/gogleclone.jpg",
     description: "",
     tagimg: "",
     Previewlink: "",
