@@ -83,13 +83,6 @@ html {
 
 /*properties for online accreditaions(MOOCS) heading*/
 
-.h4,
-h4 {
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-}
-
 .s2 h4 {
   margin-bottom: 1.2rem;
 }
@@ -117,7 +110,7 @@ h4 {
 }
 
 .card .row {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .s2 h4,
 p {
@@ -146,9 +139,9 @@ p {
   height: 75%;
 }
 .content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(164, 163, 247, 0.564);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -186,19 +179,20 @@ p {
   top: 80%;
 }
 #mooc .card {
-  border-radius: 5px;
+  border-radius: 80px;
   background: var(--tint-col);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 10px rgba(252, 177, 207, 0.902), 0 0 6px rgba(137, 202, 242, 0.664);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+  
 }
 #mooc .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 20px rgba(236, 37, 103, 0.916), 0 4px 8px rgba(97, 3, 248, 0.963);
 }
 #mooc .card-body {
   background-color: var(--bg1-color);
@@ -210,7 +204,7 @@ p {
   transform-origin: center -20px;
   transform-box: fill-box;
   float: left;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(145, 106, 243, 0.947);
 }
 @keyframes swing {
   0% {
