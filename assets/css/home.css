@@ -55,11 +55,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-.meimage{
-  margin-left: 50%;
-  margin-top: -40%;
-  
-}
+
 /* Slice transition starts from here */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
@@ -185,6 +181,8 @@ figure .image-2:nth-child(9) {
 .frame:hover {
   box-shadow: 35px 35px 50px 20px rgb(7, 249, 237);
 } 
+
+
 /* Slice transition ended here */ 
 
 
@@ -623,12 +621,12 @@ a:hover {
 
 button {
   --text-base: 277deg, 55%, 40%;
-  --text-hover: 307deg, 72%, 86%;
+  --text-hover:var(--col-white);
   --shadow-start: 52deg, 100%, 72%;
   --shadow-end: 282deg, 90%, 50%;
   --shadow-inner: 277deg, 90%, 62%;
   all: unset;
-  color:#af42f89e;
+  color:#af42f897;
   font: 700 1.125rem/1.2 Raleway, sans-serif;
   letter-spacing: 0.08em;
   text-align: center;
@@ -662,12 +660,12 @@ button::before {
   opacity: 0;
 }
 button::after {
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #fff;
+  box-shadow: inset 0 0 0 2px #fff, 0 0 0 4px rgb(132, 2, 76), 5px 5px 0 4px #f45497;
   mix-blend-mode: overlay;
-  opacity: 0;
+  opacity:1;
 }
 button:hover, button:focus {
-  color: hsla(var(--text-hover), 1);
+  color: hsla(var(--text-hover), 5);
   border-color: transparent;
   box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
 }
