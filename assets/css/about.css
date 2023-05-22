@@ -64,6 +64,66 @@ body {
 
 /* Resume button starts from here */
 
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  align-items: center;
+  color: #fbf6f6;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  width: auto;
+  margin: auto;
+}
+
+.btn {
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.btn::after, .btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+}
+.btn::before {
+  background-color: #02d3cc;
+  top: -1rem;
+  left: 0rem;
+}
+.btn::after {
+  background-color: #6200cb;
+  top: 1rem;
+  left: 7.5rem;
+}
+.btn:hover::before, .btn:hover::after {
+  top: 0;
+  transform: skewx(0deg);
+}
+.btn:hover::after {
+  left: .8rem;
+}
+.btn:hover::before {
+  left: 7rem;
+}
+
+
+/* 
 button {
   padding: calc(.05em + var(--s)) calc(.3em + var(--s));
   color: var(--c);
@@ -99,7 +159,9 @@ button {
   border: none;
   margin: .1em;
   width:5px;
-}
+} */
+
+
 
 /* Resume btton ends here */
 
