@@ -1,16 +1,16 @@
-const progressBars = document.querySelectorAll(".progress-bar");
-progressBars.forEach(progressBar => {
-  let number = progressBar.querySelector(".number");
-  let counter = 0;
-  setInterval(() => {
-    if (counter == progressBar.dataset.percent){
-      clearInterval();
-    } else {
-      counter += 1;
-      number.innerHTML = counter + "%";
-    }
-  }, 30);
-});
+// const progressBars = document.querySelectorAll(".progress-bar");
+// progressBars.forEach(progressBar => {
+//   let number = progressBar.querySelector(".number");
+//   let counter = 0;
+//   setInterval(() => {
+//     if (counter == progressBar.dataset.percent){a
+//       clearInterval();
+//     } else {
+//       counter += 1;
+//       number.innerHTML = counter + "%";
+//     }
+//   }, 30);
+// });
 
 
 // function animateCircle(circleId, gradientId, numberId, targetValue, intervalTime) {
