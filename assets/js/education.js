@@ -11,7 +11,7 @@ const moocscards = [
     moocLink: "https://drive.google.com/file/d/1zciNRCQo-Dfw5h9GHmKONkaakFxBcrFu/view?usp=share_link",
   },
   {
-    title: "Data Structure And Algorithm using C & C++",
+    title: "Data Structure & Algorithm using C, C++",
     cardImage: "assets/images/education-page/udemy-logo.jpg",
     moocLink: "https://www.udemy.com/certificate/UC-40555f72-18a7-4e6b-9888-629b75828aa2/",
   },
@@ -88,7 +88,7 @@ const showCards = () => {
                   <div class="content-overlay"></div>
                     <img src=${cardImage} class="card-img-top content-image">     
                   <div class="content-details fadeIn-bottom">
-                    <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
+                    <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: blue;"></i></a>                                   
                   </div>
                 </div>
                 <div class="card-body">
