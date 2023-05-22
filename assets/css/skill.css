@@ -29,7 +29,7 @@ html {
 
 .dropdown {
 
-margin-top: 6.5%;
+margin-top: .5%;
 
 }
 
@@ -54,8 +54,8 @@ margin-top: 6.5%;
 }
 
 section > div {
-  padding-top: 7rem !important;
-  margin-bottom: -8%;
+  padding-top: 5.5rem !important;
+  margin-bottom: 27%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -130,253 +130,582 @@ font-size: larger;
   }
 }
 
+/* Animated Skills Bar ended here  */
 
-/* ----------Animated Skills Bar starts here ---------- */
+/*** IN PROGRESS ***/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
-.tech-skill{
-  color: var(--bg-txt-img);
-  font-size: 50px;
-  font-weight: bold;
-  padding-left: 10%;
-  margin-top: 25%;
-  
-}
-/* html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-  background: #6665ee;
-} */
-/* ::selection{
-  color: #ca3a3a;
-  background: #6665ee;
-} */
-.skill-bars{
-  padding: 25px 30px;
-  width: 600px;
-  height: 500px;;
-  background: #bea7fc;
-  box-shadow: 5px 5px 20px rgba(254, 254, 254, 0.2);
-  border-radius: 20px;
-  margin-bottom: 9%;
-}
-.skill-bars .bar{
-  margin: 20px 0;
-}
-.skill-bars .bar:first-child{
-  margin-top: 0px;
-}
-.skill-bars .bar .info{
-  margin-bottom: 5px;
-}
-.skill-bars .bar .info span{
-  font-weight: 500;
-  font-size: 20px;
-  color: #000;
-  opacity: 0;
-  animation: showText 0.5s 1s linear forwards;
-}
-@keyframes showText {
-  100%{
-    opacity: 1;
-  }
+:root {
+	--c1: #fe0177;
+	--b2: #222;
+	--b3: #333;
+	--w1: #fff;
+	--w2: #eee;
+	--t1: all 0.5s ease 0s;
 }
 
-.skill-bars{
-  margin-top:3%;
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
 }
-.skill-bars .bar .progress-line{
-  height: 10px;
-  width: 100%;
-  background: #f596c4;
-  position: relative;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 10px;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-              0 1px rgba(71, 1, 42, 0.8);
-  animation: animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+
+* {
+	box-sizing: border-box;
 }
-@keyframes animate {
-  100%{
-    transform: scaleX(1);
-  }
+
+*:before,
+*:after {
+	box-sizing: border-box;
+	content: "";
 }
-.bar .progress-line span{
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: #6a0132;
-  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+.content {
+	width: 93vw;
+	height: 85vh;
 }
-.bar .progress-line.html span{
-  width: 90%;
+
+.profile-skills {
+	display: flex;
+	bottom: 155px;
+	position: relative;
+	width: 100%;
+	align-items: flex-start;
 }
-.bar .progress-line.css span{
-  width: 80%;
+
+.profile-skills > div {
+	margin-right: 3%;
+	border-radius: 50px;
+	position: relative;
 }
-.bar .progress-line.javascript span{
-  width: 65%;
+
+ul.skills {
+	width: 100%;
+	position: relative;
+	padding: 35px 35px;
+	background: linear-gradient(0deg, var(--c1) 0 10px,	var(--b2) 0 calc(100% - 10px), var(--c1) 0 100%);
 }
-.bar .progress-line.web-development span{
-  width: 55%;
+
+ul.skills2 {
+	--c1: #9acd32;
 }
-.bar .progress-line.cplus span{
-  width: 60%;
+
+ul.skills3 {
+	--c1: #ff4500;
 }
-.bar .progress-line.java span{
-  width: 70%;
+
+ul.skills:before {
+	content: "Skills";
+	text-transform: uppercase;
+	position: absolute;
+	top: -75px;
+	height: 50px;
+	color: var(--w1);
+	background-color: var(--b2);
+	width: 100%;
+	left: 0;
+	padding: 15px 15px 0 0;
+	text-align: end;
+	font-weight: 600;
+	z-index: 1;
+	transition: var(--t1);
+	font-size: 50px;
+	line-height: 35px;
+	transform: scaleY(1.65);
 }
-.bar .progress-line.dsa span{
-  width: 60%;
+
+ul.skills2:before {
+	content: "Tools";
 }
-.progress-line span::before{
-  position: absolute;
-  content: "";
-  top: -10px;
-  right: 0;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000000;
-  opacity: 0;
-  animation: showText2 0.5s 2.5s linear forwards;
+
+ul.skills3:before {
+	content: "Codes";
 }
-.progress-line span::after{
-  position: absolute;
-  top: -28px;
-  right: 0;
-  font-weight: 500;
-  background: #2e016e;
-  color: #ffffff;
-  padding: 1px 8px;
-  font-size: 15px;
-  border-radius: 3px;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
+
+ul.skills:after {
+	content: "";
+	position: absolute;
+	border: 40px solid #fff0;
+	border-top-color: var(--b2);
+	top: -30px;
+	left: 10px;
+	z-index: 0;
+	transition: var(--t1);
+	filter: drop-shadow(0 11px 0.1px var(--w1));
 }
-@keyframes showText2 {
-  100%{
-    opacity: 1;
-  }
+
+ul.skills:hover:before,
+label:hover + ul.skills:before,
+input:checked + label + ul.skills:before {
+	transition: var(--t1);
+	background-color: #fe0177;
+	background-position: 0 50%;
 }
-.progress-line.html span::after{
-  content: "90%";
+ul.skills:hover:after,
+label:hover + ul.skills:after,
+input:checked + label + ul.skills:after {
+	top: -20px;
+	transition: var(--t1);
+	border-top-color: #fe0177;
 }
-.progress-line.css span::after{
-  content: "80%";
+
+ul.skills2:hover:before,
+label:hover + ul.skills2:before,
+input:checked + label + ul.skills2:before {
+	background-color: #9acd32;
 }
-.progress-line.javascript span::after{
-  content: "65%";
+ul.skills2:hover:after,
+label:hover + ul.skills2:after,
+input:checked + label + ul.skills2:after {
+	border-top-color: #9acd32;
 }
-.progress-line.web-development span::after{
-  content: "55%";
+
+ul.skills3:hover:before,
+label:hover + ul.skills3:before,
+input:checked + label + ul.skills3:before {
+	background-color: #ff4500;
 }
-.progress-line.cplus span::after{
-  content: "60%";
+ul.skills3:hover:after,
+label:hover + ul.skills3:after,
+input:checked + label + ul.skills3:after {
+	border-top-color: #ff4500;
 }
-.progress-line.java span::after{
-  content: "70%";
+
+ul.skills li {
+	--per: 50;
+	--dur: calc(calc(var(--per) / 100) * 1.5s);
+	margin: 0 0 5px 0;
+	list-style: none;
+	padding: 20px 0;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: var(--w2);
 }
-.progress-line.dsa span::after{
-  content: "60%";
+
+ul.skills li:before {
+	content: "";
+	position: absolute;
+	background: #1c1c1c;
+	height: 16px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	border-radius: 2px;
+	border: 1px solid #111;
+	border-color: #111 #323232 #323232 #111;
+	--track: #dd226740;
+	background: linear-gradient(
+		90deg,
+		var(--track) calc(calc(var(--per) * 1%) + 4px),
+		#1c1c1c calc(calc(var(--per) * 1%) + 4px)
+	);
+}
+
+ul.skills2 li:before {
+	--track: #9acd3240;
+}
+
+ul.skills3 li:before {
+	--track: #ff450040;
+}
+
+ul.skills li:after {
+	content: "";
+	height: 11px;
+	margin: 0 0 2px 0;
+	background: #fe0177;
+	position: absolute;
+	box-shadow: 0px 0px 10px 1px #00c6ff66;
+	left: 3px;
+	width: 0%;
+	bottom: 0;
+	transition: all var(--dur) ease 0s;
+	animation: start 1s ease 0s 2 alternate;
+}
+
+ul.skills2 li:after {
+	background: #9acd32;
+	box-shadow: 0px 0px 10px 1px #9acd3299;
+}
+
+ul.skills3 li:after {
+	background: #ff4500;
+	box-shadow: 0px 0px 10px 1px #ff450099;
+}
+
+ul.skills li:hover {
+	filter: brightness(1.5);
+	transition: var(--t1);
+}
+
+ul.skills:hover li:after,
+label:hover + ul.skills li:after,
+input:checked + label + ul.skills li:after {
+	width: calc(calc(var(--per) * 1%) - 2px);
+}
+
+@keyframes start {
+	100% {
+		width: calc(calc(var(--per) * 1%) - 2px);
+	}
+}
+
+ul.skills2 li:after {
+	animation-delay: 0.5s;
+}
+ul.skills3 li:after {
+	animation-delay: 1s;
+}
+
+ul.skills li span {
+	font-weight: 500;
+}
+
+ul.skills li span:before {
+	position: absolute;
+	right: -25px;
+	top: 43px;
+	transition: var(--t1);
+	content: "";
+	opacity: 1;
+	border: 7px solid #fff0;
+}
+
+ul.skills li:hover span:before,
+.profile-skills input:checked + label + ul.skills li span:before {
+	transition: var(--t1);
+	right: calc(calc(calc(100 - var(--per)) * 1%) - 12px);
+	opacity: 1;
+	border-right-color: #fe0177;
+}
+
+ul.skills2 li:hover span:before,
+.profile-skills input:checked + label + ul.skills2 li span:before {
+	border-right-color: #9acd32;
+}
+
+ul.skills3 li:hover span:before,
+.profile-skills input:checked + label + ul.skills3 li span:before {
+	border-right-color: #ff4500;
+}
+
+ul.skills li span:after {
+	position: absolute;
+	right: -40px;
+	top: 38px;
+	transition: var(--t1);
+	counter-reset: percent var(--per);
+	/*content: counter(percent) "%";*/
+	content: counter(percent);
+	color: var(--b2);
+	opacity: 1 !important;
+	padding: 4px 6px;
+	border-radius: 1px;
+	font-weight: bold;
+	pointer-events: none;
+}
+
+ul.skills li:hover span:after,
+.profile-skills input:checked + label + ul.skills li span:after {
+	transition: var(--t1);
+	right: calc(calc(85 - var(--per)) * 1%);
+	right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
+	opacity: 1;
+	background: var(--c1);
+}
+
+ul.skills2 li:hover span:after {
+	background: #9acd32;
+}
+
+ul.skills3 li:hover span:after {
+	background: #ff4500;
+}
+
+/*********************/
+/*** SKILLS VALUES ***/
+/*********************/
+
+ul.skills li.sk-ani { --per: 85; }
+ul.skills li.sk-cms { --per: 75; }
+ul.skills li.sk-dis { --per: 90; }
+ul.skills li.sk-dtb { --per: 65; }
+ul.skills li.sk-pro { --per: 60; }
+ul.skills li.sk-res { --per: 90; }
+
+ul.skills li.sk-gim { --per: 90; }
+ul.skills li.sk-ado { --per: 60; }
+ul.skills li.sk-not { --per: 85; }
+ul.skills li.sk-tri { --per: 70; }
+ul.skills li.sk-wor { --per: 90; }
+ul.skills li.sk-tre { --per: 65; }
+
+ul.skills li.sk-css { --per: 95; }
+ul.skills li.sk-htm { --per: 90; }
+ul.skills li.sk-jav { --per: 70; }
+ul.skills li.sk-php { --per: 80; }
+ul.skills li.sk-sql { --per: 65; }
+ul.skills li.sk-pug { --per: 40; }
+
+/*********************/
+/***** TOP LABELS ****/
+/*********************/
+
+.profile-skills input {
+	display: none;
+}
+
+.profile-skills label {
+	background: var(--w1);
+	position: absolute;
+	top: -61px;
+	left: 22px;
+	z-index: 2;
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	cursor: pointer;
+	transition: var(--t1);
+	box-shadow: 0 0 0 0 var(--w1);
+}
+
+.profile-skills label:before {
+	content: "";
+	background: #fff0;
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	z-index: 2;
+	border: 9px solid var(--b2);
+	border-top-width: 0;
+	border-right-width: 0;
+	transform: rotate(-45deg);
+	width: 33px;
+	height: 22px;
+	border-radius: 2px;
+	transition: var(--t1);
+}
+
+.profile-skills label:hover {
+	box-shadow: 0 0 0 3px var(--w1);
+	transition: var(--t1);
+}
+
+.profile-skills label:hover:before {
+	border-color: var(--b2);
+	transition: var(--t1);
+}
+
+.profile-skills input:checked + label {
+	box-shadow: 0 0 0 6px var(--w1);
+	transition: var(--t1);
+}
+
+.profile-skills input:checked + label:before {
+	border-color: #fe0177;
+}
+
+.profile-skills input#sk2:checked + label:before {
+	border-color: #9acd32;
+}
+
+.profile-skills input#sk3:checked + label:before {
+	border-color: #ff4500;
+}
+
+label[for="sk1"] {
+	/*left: -10px;*/
+}
+label[for="sk2"] {
+	/*left: calc(34% - 6px);*/
 }
 
 
-/* Animated circular Bar starts here */
-
-.soft-skill{
-  color: var(--bg-txt-img);
-  font-size: 50px;
-  font-weight: bold;
-  padding-left: 66%;
-  margin-top: -48.5%;
-
+label[for="sk1"]:before {
+	border-color: rgb(237, 100, 178);
+}
+label[for="sk2"]:before {
+	border-color: yellowgreen;
+}
+label[for="sk3"]:before {
+	border-color: orangered;
 }
 
-.skill2-bars{
-  padding-left: 52%;
-  margin-top: 1%;
-}
-.skill2-bars .progress-bar{
-  margin: 30px 25px;
+/*********************/
+/*** BOTTOM LABELS ***/
+/*********************/
 
-
-}
-.progress-bar {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-  
+ul.skills li.more {
+	padding: 0;
+	margin-bottom: 20px;
 }
 
-.outer {
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-  padding: 20px;
-  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255,0.7);
+ul.skills li.more:before,
+ul.skills li.more:after {
+	display: none;
 }
 
-.inner {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(49, 10, 97, 0.984),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba (255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0,0.15),
-    0px 12px 10px -10px rgba(221, 57, 57, 0.968);
+ul.skills li.more:hover {
+	filter: none !important;
 }
 
-.label {
-  font-size: 15px;
-  font-weight: 600;
-  color: #f8f2f2;
+ul.skills li.more div {
+	max-height: 0;
+	transition: var(--t1);
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+ul.skills li.more input:checked ~ div {
+	max-height: 150px;
+	transition: var(--t1);
+	padding: 20px 0 0;
 }
 
-.number {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fdfbfb;
+ul.skills li.more div span:before,
+ul.skills li.more div span:after {
+	display: none;
 }
 
-circle {
-  fill:none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472 ;
-  animation: anim 2.5s linear forwards;
+ul.skills li.more label {
+	background: linear-gradient(163deg, var(--b2) 50%, var(--w1) 50%);
+	right: 0;
+	left: inherit;
+	top: inherit;
+	bottom: -70px;
+	color: var(--b2);
+	background-size: 100% 300%;
+	background-position-y: 100%;
+	transition: var(--t1);
+	width: 55px;
+	height: 55px;
+	right: -50px;
 }
 
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+ul.skills li.more label:before {
+	border: 0;
+	height: 100%;
+	width: 100%;
+	transform: rotate(0deg);
+	content: "+";
+	content: "\271A";
+	font-size: 45px;
+	line-height: 55px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	color: var(--c1);
 }
 
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 165;
-  }
+ul.skills li.more label:hover {
+	background-position-y: 0%;
+	color: var(--w1) !important;
+	transition: var(--t1);
+	box-shadow: 0 0 0 10px var(--w1);
 }
+
+ul.skills li.more span {
+	background: #1c1c1c;
+	border-radius: 1px;
+	margin: 10px 10px 1px 1px;
+	padding: 4px 8px;
+	display: inline-block;
+	border: 1px solid #111;
+	border-color: #111 #323232 #323232 #111;
+}
+
+ul.skills li.more span:hover {
+	color: var(--w0);
+	background: var(--c1);
+	box-shadow: 0px 0px 5px 1px var(--c1);
+	border-color: #fff2;
+}
+
+ul.skills li.more input:checked + label {
+	box-shadow: 0 0 0 9px var(--w1);
+	background-position-y: 0%;
+	color: var(--w0);
+	bottom: -70px;
+}
+
+ul.skills li.more input:checked + label:before {
+	content: "\2759";
+	transform: rotate(90deg);
+	font-weight: 600;
+}
+
+ul.skills li.more input:checked + label:hover {
+	box-shadow: 0 0 0 0 var(--w1);
+	background-position-y: 100%;
+	color: var(--b2) !important;
+}
+
+/*********************/
+/*** MEDIA QUERIES ***/
+/*********************/
+
+@media only screen and (max-width: 1024px) {
+	.content { height: 60vh; }
+	.profile-skills {
+		flex-direction: row;
+    flex-wrap: wrap;
+		top: 20px;
+	}
+	.profile-skills > div {
+		width: 47% !important;
+	}
+	.profile-skills > div:nth-child(3) {
+		width: 98% !important;
+		margin-top: 120px;
+	}
+}
+
+
+/*** Mobile view disabled to get (almost) the desired thumbnail ***/
+/*** Uncomment below code to add the media query for mobile view ***/
+
+/*
+@media only screen and (max-width: 768px) {
+	.content { height: 60vh; }
+	.profile-skills {
+		flex-direction: row;
+    flex-wrap: wrap;
+		top: 20px;
+	}
+	.profile-skills > div {
+		width: 98% !important;
+	}
+	.profile-skills > div:nth-child(2), 
+	.profile-skills > div:nth-child(3) {
+		margin-top: 120px;
+	}
+	ul.skills li:after {
+		width: calc(calc(var(--per) * 1%) - 2px);
+	}
+	ul.skills li span:before {
+		transition: var(--t1);
+		right: calc(calc(96.5 - var(--per)) * 1%);
+		opacity: 1;
+		border-right-color: #2187e7;
+	}
+	ul.skills2 li span:before {
+		border-right-color: #9acd32;
+	}
+	ul.skills3 li span:before {
+		border-right-color: #ff4500;
+	}
+	ul.skills li span:after {
+		transition: var(--t1);
+		right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
+		opacity: 1;
+		background: var(--c1);
+	}
+}
+*/
