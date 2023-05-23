@@ -184,18 +184,36 @@ figure .image-2:nth-child(9) {
 
 
 /* Slice transition ended here */ 
+ 
+/* ******************my name hover effect ****************** */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .header {
   font-weight: bold;
-  font-size:2.6cm;
-  color: #f579ab;}
+  font-family:cursive;
+  font-size: 2.3cm;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(rgb(51, 3, 113), rgb(0, 255, 247));
+  background-size: 62px 80%;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
 
+.header:hover {
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
 
-  .header:hover{
-    color:#b494eb;
+/* 
+  html[data-theme="dark"] .header{
+    color: #ff0066;
   }
+  html[data-theme="dark"].header:hover{
+    color:#b494eb;
+  } */
 
 .text {
   font-size: 10%;
@@ -209,7 +227,7 @@ figure .image-2:nth-child(9) {
   display: none;
   line-height: 1;
   top: 40%;
-  color:#b6a2f0;
+  color:#cc0d76;
   font-weight: bolder;
 }
 
