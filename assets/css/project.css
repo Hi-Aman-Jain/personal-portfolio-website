@@ -36,8 +36,14 @@ body {
 
 /*color of projects page heading*/
 
-.my_projects {
-  color: #4e00bb;
+html[light-mode="dark"] .my_projects {
+
+  color:#894cde;
+}
+
+html[light-mode="light"] .my_projects {
+
+  color:#4e00bb;
 }
 .pre-heading{
   font-size: larger;

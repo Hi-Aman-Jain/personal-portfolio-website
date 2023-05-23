@@ -39,10 +39,16 @@ html {
 
 /*color of education page heading*/
 
-.edu_background {
-  color: #4e00bb;
+
+html[light-mode="dark"] .edu_background {
+
+  color:#894cde;
 }
 
+html[light-mode="light"] .edu_background {
+
+  color:#4e00bb;
+}
 
 /* -----Education Section CSS----- */
 

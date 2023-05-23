@@ -53,9 +53,16 @@ html {
   
   }
 
-.my_contact {
-  color: #4e00bb;
-  
+ 
+
+html[light-mode="dark"] .my_contact {
+
+  color:#894cde;
+}
+
+html[light-mode="light"] .my_contact {
+
+  color:#4e00bb;
 }
 
 .contact_head {
@@ -114,7 +121,6 @@ html {
   font-size: 3rem;
   padding: 15px;
   border-width: 0cap;
-  color: #4e00bb;
 }
 
 .contact-item-title {

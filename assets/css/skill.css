@@ -111,9 +111,18 @@ font-size: larger;
 
 /*color of skill page headings*/
 .my_skill {
-  color: #4e00bb;
   font-size: 70px;
 }
+
+html[light-mode="dark"] .my_skill {
+
+	color:#894cde;
+  }
+  
+  html[light-mode="light"] .my_skill {
+  
+	color:#4e00bb;
+  }
 
 .sub-heading {
   font-size: 17px;

@@ -59,9 +59,44 @@ body {
   padding-top: 10%;
   font-size: 17.8px;
   color: var(--head-col);
-  font-family:cursive;  
+  font-family:cursive;
+    
 }
 
+.section-2{
+  width: 100%;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+.my-about-wrapper .about{
+  font-size: 85px;
+  margin-top: 7%;
+  font-weight:bold;
+  color: var(--head-col);
+}
+.my-self{
+  margin: auto;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2.px;
+  display: block;
+  text-align:center;
+  position: relative;
+  top: 65px;
+  left: 25px;
+ 
+  margin-top: -110px;
+}
+
+html[light-mode="dark"] .my-self {
+
+  color:#894cde;
+}
+
+html[light-mode="light"] .my-self {
+
+  color:#4e00bb;
+}
 /* Resume button starts from here */
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
@@ -79,7 +114,7 @@ body {
 
 .container {
   width: auto;
-  margin: auto;
+  
 }
 
 .btn {
@@ -121,74 +156,7 @@ body {
 .btn:hover::before {
   left: 7rem;
 }
-
-
-/* 
-button {
-  padding: calc(.05em + var(--s)) calc(.3em + var(--s));
-  color: var(--c);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#9b0678f5 90deg,var(--c) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .4s linear, color 0s, background-color 2s;
-  outline-offset: .2em;
-}
-button:hover,
-button:focus-visible{
-  --_p: 0px;
-  outline-offset: .1em;
-}
-
-.button-text{
-  color: #41f3e1;
-  z-index: 1;
-  margin-top: -15px;
-}
-
-body {
-  margin: 2;
-  grid-template-columns: auto auto;
-  place-content: center;
-}
-button {
-  font-family: system-ui, sans-serif;
-  font-weight: bold;
-  font-size: 2.2rem;
-  cursor: pointer;
-  border: none;
-  margin: .1em;
-  width:5px;
-} */
-
-
-
 /* Resume btton ends here */
-
-.section-2{
-  width: 100%;
-  margin-top: -185px;
-  margin-left: 20px;
-}
-.my-about-wrapper .about{
-  font-size: 85px;
-  margin-top: 10%;
-  font-weight:bold;
-  color: var(--head-col);
-}
-.my-self{
-  margin: auto;
-  font-size: 60px;
-  font-weight: bold;
-  letter-spacing: 2.px;
-  display: block;
-  text-align:center;
-  position: relative;
-  top: 70px;
-  left: 25px;
-  color: #4e00bb;
-  margin-top: -110px;
-}
 
 /*Responsive*/
 
