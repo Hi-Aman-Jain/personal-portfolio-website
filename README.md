@@ -1,8 +1,8 @@
 # Personal Portfolio Website
 
-### Welcome to my personal portfolio website! This repository contains the source code and files for my portfolio website, which was built using HTML, CSS, and JavaScript. Till now i have updated many parts so that it always looks perfect according to the time. In this, there is a footer - Contact Me part in every page of the section. 
+# Welcome to my personal portfolio website! This repository contains the source code and files for my portfolio website, which was built using HTML, CSS, and JavaScript. Till now i have updated many parts so that it always looks perfect according to the time. In this, there is a footer - Contact Me part in every page of the section. 
 
-### The website consists of the following **Sections**:
+# The website consists of the following **Sections**:
 
 ## Home
 The home section serves as the landing page of the website. It features a captivating design with an animated background that grabs the visitor's attention. The home section provides a brief introduction about myself, enticing visitors to explore further. The design elements, such as color schemes and typography, are carefully selected to convey a professional and modern aesthetic.
