@@ -121,6 +121,7 @@ html[light-mode="light"] .my_contact {
   font-size: 3rem;
   padding: 15px;
   border-width: 0cap;
+  color: #07aef5;
 }
 
 .contact-item-title {
