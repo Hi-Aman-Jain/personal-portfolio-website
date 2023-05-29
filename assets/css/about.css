@@ -107,14 +107,12 @@ body, html {
 body {
   font-family: "Lato", sans-serif;
   align-items: center;
-  color: #fbf6f6;
   align-content: center;
   justify-content: center;
 }
 
 .container {
   width: auto;
-  
 }
 
 .btn {
