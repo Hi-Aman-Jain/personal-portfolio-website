@@ -10,7 +10,7 @@ document.body.appendChild(script);
 
 let header = $(`
 <nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
-<a class="navbar-brand" href="index.html">Aman jain </a>
+<a class="navbar-brand" href="index.html">Aman Jain </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
   <div id="js-hamburger" class="hamburger">
@@ -286,9 +286,9 @@ $(document).ready(function () {
         $(document).height() - 838
       ) {
         // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $("#btnScrollToTop").css("background-color", "#3c0565");
       } else {
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $("#btnScrollToTop").css("background-color", "#3c0565");
       }
     }
   });
