@@ -557,26 +557,49 @@ ul.skills3 li:hover span:after {
 /*** SKILLS VALUES ***/
 /*********************/
 
-ul.skills li.sk-ani { --per: 85; }
-ul.skills li.sk-cms { --per: 75; }
-ul.skills li.sk-dis { --per: 90; }
-ul.skills li.sk-dtb { --per: 65; }
-ul.skills li.sk-pro { --per: 60; }
-ul.skills li.sk-res { --per: 90; }
+      /* Technical skill values */
 
-ul.skills li.sk-gim { --per: 90; }
-ul.skills li.sk-ado { --per: 60; }
-ul.skills li.sk-not { --per: 85; }
-ul.skills li.sk-tri { --per: 70; }
-ul.skills li.sk-wor { --per: 90; }
-ul.skills li.sk-tre { --per: 65; }
+ul.skills li.sk-web { --per: 75; }
+ul.skills li.sk-cod { --per: 60; }
+ul.skills li.sk-dsa { --per: 55; }
+ul.skills li.sk-dbm { --per: 65; }
+ul.skills li.sk-gra { --per: 70; }
+ul.skills li.sk-con { --per: 70; }
+ul.skills li.sk-vid { --per: 75; }
 
-ul.skills li.sk-css { --per: 95; }
-ul.skills li.sk-htm { --per: 90; }
-ul.skills li.sk-jav { --per: 70; }
-ul.skills li.sk-php { --per: 80; }
-ul.skills li.sk-sql { --per: 65; }
-ul.skills li.sk-pug { --per: 40; }
+        /* Soft skill values */
+
+ul.skills li.sk-cre { --per: 80; }
+ul.skills li.sk-mng { --per: 75; }
+ul.skills li.sk-tim { --per: 70; }
+ul.skills li.sk-eng { --per: 90; }
+ul.skills li.sk-del { --per: 80; }
+ul.skills li.sk-emp { --per: 75; }
+ul.skills li.sk-sin { --per: 80; }
+
+       /* Codes skill values */
+ 
+ul.skills li.sk-ccc { --per: 65; }
+ul.skills li.sk-cpl { --per: 70; }
+ul.skills li.sk-jav { --per: 75; }
+ul.skills li.sk-pyt { --per: 65; }
+ul.skills li.sk-sql { --per: 55; }
+ul.skills li.sk-htm { --per: 80; }
+ul.skills li.sk-css { --per: 75; }
+ul.skills li.sk-jss { --per: 55; }
+ul.skills li.sk-rec { --per: 50; }
+
+        /* Tool skill values */
+
+ul.skills li.sk-vsc { --per: 80; }
+ul.skills li.sk-dev { --per: 70; }
+ul.skills li.sk-git { --per: 75; }
+ul.skills li.sk-msq { --per: 65; }
+ul.skills li.sk-aps { --per: 70; }
+ul.skills li.sk-cop { --per: 65; }
+ul.skills li.sk-mpp { --per: 80; }
+ul.skills li.sk-mse { --per: 70; }
+ul.skills li.sk-msw { --per: 75; }
 
 /*********************/
 /***** TOP LABELS ****/
