@@ -8,18 +8,18 @@ const projects = [
   {
     title: "Personal Portfolio Website",
     cardImage: "assets/images/project-page/portfolio.jpg",
-    description: "It's a unique way to showcase your work and let others know about yourself.",
+    description: "It's my unique way to showcase your work and let others know about yourself.",
     tagimg: "",
     Previewlink: "",
     Githublink: "https://github.com/Hi-Aman-Jain/portfolio-website",
   },
   {
-    title: "Bulsaye Game",
-    cardImage: "assets/images/project-page/bulsaye_game.jpg",
+    title: "Building Blocks Game",
+    cardImage: "assets/images/project-page/Building_Blocks.jpg",
     description: "",
     tagimg: "",
     Previewlink: "",
-    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
+    Githublink: "https://github.com/Hi-Aman-Jain/building-block_game.git",
   },
   {
     title: "Kill the Bird Game",
@@ -59,7 +59,7 @@ const projects = [
     description: "",
     tagimg: "",
     Previewlink: "",
-    Githublink: "",
+    Githublink: "https://github.com/Hi-Aman-Jain/Calculator.git",
   },
   {
     title: "Google Webpage",
