@@ -194,16 +194,17 @@ figure .image-2:nth-child(9) {
   font-family:cursive;
   font-size: 2.3cm;
   transform: translate(-50%,-50%);
-  background-image: linear-gradient(rgb(51, 3, 113), rgb(0, 255, 247));
-  background-size: 62px 80%;
+  background-image: linear-gradient(rgb(216, 165, 248), rgb(102, 0, 255));
+  background-size: 65px 60%;
   background-repeat: no-repeat;
-  background-position: 0% 100%;
+  background-position: 0% 70%;
    transition: background-size .7s, background-position .5s ease-in-out;
+   padding-top: 12px;
 }
 
 .header:hover {
-  background-size: 100% 100%;
-  background-position: 100% 0%;
+  background-size: 100% 90%;
+  background-position: 100% 0px;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
 
@@ -443,7 +444,7 @@ html[light-mode="dark"] .github-icon{
   width: 40px;
   margin-left: 12px;
   margin-top: 5px;
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .github:hover #arm {
@@ -633,25 +634,20 @@ a:hover {
 
 /* glowing botton css started here */
 
-:root {
-  --page-background: 277deg, 55%, 12%;
-}
-
-button {
+.btn  {
   --text-base: 277deg, 55%, 40%;
   --text-hover:var(--col-white);
   --shadow-start: 52deg, 100%, 72%;
   --shadow-end: 282deg, 90%, 50%;
   --shadow-inner: 277deg, 90%, 62%;
   all: unset;
-  color:#af42f897;
+  color:#acf9ff57;
   font: 700 1.125rem/1.2 Raleway, sans-serif;
   letter-spacing: 0.08em;
   text-align: center;
   padding: 0.85em;
   font-size: 25px;
-  max-width: 100%;
-  width: 12em;
+  max-width: 35%;
   background: inherit;
   background-clip: padding-box;
   border: 7px solid hsla(var(--text-base), 1);
@@ -660,7 +656,7 @@ button {
   position: relative;
   transition: 0.25s ease-out;
 }
-button::before, button::after {
+.btn::before, .btn::after {
   content: "";
   border-radius: inherit;
   transition: inherit;
@@ -668,7 +664,7 @@ button::before, button::after {
   inset: 0;
   pointer-events: none;
 }
-button::before {
+.btn::before {
   inset: -0.2em;
   z-index: -1;
   background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
@@ -677,17 +673,17 @@ button::before {
   transform: scaleY(0.5);
   opacity: 0;
 }
-button::after {
-  box-shadow: inset 0 0 0 2px #fff, 0 0 0 4px rgb(132, 2, 76), 5px 5px 0 4px #f45497;
+.btn::after {
+  box-shadow: inset 0 0 0 2px #fdfdfd, 0 0 0 6px rgb(132, 2, 76), 5px 5px 0 6px #f45497;
   mix-blend-mode: overlay;
   opacity:1;
 }
-button:hover, button:focus {
+.btn:hover, .btn:focus {
   color: hsla(var(--text-hover), 5);
   border-color: transparent;
   box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
 }
-button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+ .btn:hover::before,  .btn:hover::after, .btn:focus::before, .btn:focus::after {
   transform: none;
   opacity: 1;
 }
