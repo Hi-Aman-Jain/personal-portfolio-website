@@ -21,14 +21,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #140b24;
+  background-color: #210b24;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999999;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Atom */
