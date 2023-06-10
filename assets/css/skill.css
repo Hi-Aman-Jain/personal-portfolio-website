@@ -33,6 +33,21 @@ margin-top: .5%;
 
 }
 
+
+
+/*color of education page heading*/
+
+
+html[light-mode="dark"] .edu_background {
+
+	color:#894cde;
+  }
+  
+  html[light-mode="light"] .edu_background {
+  
+	color:#4e00bb;
+  }
+
 @media (max-width: 766px) {
   .dropdown {
     position: absolute;
@@ -189,7 +204,6 @@ body {
 	
 }
 
-
 .profile-skills {
 	display: flex;
 	bottom: 30px;
@@ -268,11 +282,11 @@ ul.skills4:before {
 }
 
 ul.skills2:before {
-	content: "My Tools";
+	content: "Best Tools";
 }
 
 ul.skills3:before {
-	content: "My Codes";
+	content: "Best Codes";
 }
 
 ul.skills:after {
@@ -746,3 +760,207 @@ ul.skills li.sk-msw { --per: 75; }
 	}
 }
 
+/* Accredation Cards CSS :start here */
+
+.u-center-text {
+	text-align: center !important;
+}
+  .btn, .btn:link, .btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	position: relative;
+	font-size: 1.6rem;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	-webkit-transform: translateY(-3px);
+			transform: translateY(-3px);
+	-webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover::after {
+	-webkit-transform: scaleX(1.4) scaleY(1.6);
+			transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+  }
+  
+  .btn:active, .btn:focus {
+	outline: none;
+	-webkit-transform: translateY(-1px);
+			transform: translateY(-1px);
+	-webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn--white {
+	background-color: #fff;
+	color: #000000e6;
+	font-weight: bolder;
+  }
+  
+  .btn--white:hover {
+	background: linear-gradient(-45deg, #300154, #4d003c);
+	color: #65c0fc;
+	text-decoration: underline;
+	font-weight: bolder;
+  }
+  
+  
+  html {
+	font-size: 62.5%;
+  }
+  
+  body {
+	-webkit-box-sizing: border-box;
+  }
+
+
+  .card {
+	-webkit-perspective: 150rem;
+			perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 23rem;
+	color: #1f0042da;
+  }
+  
+  .card__side {
+	height: 23rem;
+	-webkit-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	border-radius: 3px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+			box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  
+  .card__side--front-1 {
+	background: linear-gradient(-45deg, #a30067, #007b71);
+  }
+  
+  .card__side--back {
+	-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+  }
+  
+  .card__side--back-1 {
+	background: linear-gradient(-45deg, #007b71, #a30067);
+  }
+
+  .card:hover .card__side--front-1,
+  .card:hover .card__side--front-2,
+  .card:hover .card__side--front-3 {
+	-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+  }
+  
+  .card:hover .card__side--back {
+	-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+  }
+  
+  .card__title {
+	height: 20rem;
+	padding: 4rem 2rem 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+  }
+  
+  .card__title--1 .fas {
+	font-size: 4rem;
+  }
+  
+  .card__title--2 .fas {
+	font-size: 4rem;
+  }
+  
+  .card__title--3 .fas {
+	font-size: 4rem;
+  }
+  
+  .card__heading {
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	width: 75%;
+  }
+  
+  .card__heading-span {
+	padding: 1rem 1.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+  }
+
+  .card__cta {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	width: 90%;
+	text-align: center;
+  }
+  
+  .card__price-box {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 2rem;
+  }
+  
+  .card__price-only {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 100%;
+  }
+  
+  .card__para-text {
+	font-size: 20px;
+	font-weight: bolder;
+  }
+  
+  .row {
+	max-width: 114rem;
+	margin-bottom: 3%;
+	margin-left: 10%
+  }
+  
+  .row:not(:last-child) {
+	margin-top: 5rem;
+  }
+ 
+  .row [class^="col-"]:not(:last-child) {
+	margin-right: 6rem;
+  }
+
+  .row .col-1-of-3 {
+	width: calc((100% - 2 * 6rem) / 3);
+  }
+  
