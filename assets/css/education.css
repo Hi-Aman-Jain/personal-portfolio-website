@@ -65,7 +65,7 @@ html[light-mode="light"] .edu_background {
   .godown {
     position: absolute;
     z-index: 1;
-    padding-top: 8rem;
+    padding-top: 1rem;
   }
 }
 
@@ -76,18 +76,7 @@ html[light-mode="light"] .edu_background {
   background-position: center center;
   object-fit: fill;
 }
-
-.s2 {
-  overflow-x: hidden;
-}
-
-.s2 .head {
-  font-size: 4rem;
-  font-weight: bold;
-  
-} 
-
-
+ 
 /* -----Education Timeline CSS----- */
 section {
   padding: 100px 0;
@@ -101,23 +90,14 @@ body {
   font-weight: 400;
   background-color: #eee;
 }
+
+.whole{
+  margin-top: -11%;
+}
 h1 {
   font-size: 200%;
   letter-spacing: 3px;
   font-weight: 400;
-}
-
-header {
-  background: #3F51B5;
-  color: #FFFFFF;
-  padding: 150px 0;
-}
-header p {
-  font-family: "Allura";
-  color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 0;
-  font-size: 60px;
-  margin-top: -30px;
 }
 
 .timeline   {
@@ -209,32 +189,12 @@ header p {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: #0ef7ff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   margin-top: 25px;
   margin-left: -15px;
-}
-
-.bnt-more {
-  background: #3F51B5;
-  color: #FFFFFF;
-  padding: 8px 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
-  position: absolute; 
-  right:0;
-}
-
-.bnt-mor:hover, .bnt-mor:active, .bnt-mor:focus {
-  background: #32408f;
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .timeline-card {
@@ -297,6 +257,20 @@ blockquote {
   }}
 
   /* Experience part started here */
+
+  html[light-mode="dark"] .exp_head {
+
+    color:#894cde;
+  }
+  
+  html[light-mode="light"] .exp_head {
+  
+    color:#4e00bb;
+  }
+
+
+
+
   @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap");
   body {
     font-family: "Oswald", sans-serif;
@@ -309,6 +283,11 @@ blockquote {
   body section .row {
     align-items: center;
     height: 100vh;
+  }
+
+  .row{
+
+    margin-bottom:-10%;
   }
   
   .card {
@@ -403,7 +382,7 @@ blockquote {
     position: absolute;
     top: 34px;
     right: 35px;
-    color: rgb(8, 243, 243);
+    color: rgb(69, 240, 249);
     transform-style: preserve-3d;
     transition: ease all 2.3s;
     z-index: 4;
