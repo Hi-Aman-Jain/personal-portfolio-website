@@ -38,12 +38,12 @@ margin-top: .5%;
 /*color of education page heading*/
 
 
-html[light-mode="dark"] .edu_background {
+html[light-mode="dark"] .accre_head {
 
 	color:#894cde;
   }
   
-  html[light-mode="light"] .edu_background {
+  html[light-mode="light"] .accre_head {
   
 	color:#4e00bb;
   }
@@ -170,8 +170,6 @@ html[light-mode="dark"] .my_skill {
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	width: 100vw;
 	height: 100vh;
 	align-items: center;
@@ -193,14 +191,13 @@ body {
 .content1 {
 	width: 93vw;
 	height: 85vh;
-	margin-bottom: 100px;
+	margin-bottom: 110px;
 	margin-top: -7%;
 }
 
 .content2 {
 	width: 93vw;
 	height: 85vh;
-	margin-bottom: 100px;
 	
 }
 
@@ -768,13 +765,13 @@ ul.skills li.sk-msw { --per: 75; }
   .btn, .btn:link, .btn:visited {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 1.5rem 4rem;
+	padding: 1rem 2rem;
 	display: inline-block;
 	border-radius: 0.5rem;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 	position: relative;
-	font-size: 1.6rem;
+	font-size: 1rem;
 	border: none;
 	cursor: pointer;
   }
@@ -812,34 +809,25 @@ ul.skills li.sk-msw { --per: 75; }
 	text-decoration: underline;
 	font-weight: bolder;
   }
-  
-  
-  html {
-	font-size: 62.5%;
-  }
-  
-  body {
-	-webkit-box-sizing: border-box;
-  }
-
 
   .card {
 	-webkit-perspective: 150rem;
 			perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 23rem;
+	height: 14rem;
+	width: 20rem;
 	color: #1f0042da;
   }
   
   .card__side {
-	height: 23rem;
+	height: 14rem;
 	-webkit-transition: all 0.8s ease;
 	transition: all 0.8s ease;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 20rem;
 	-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
 	border-radius: 3px;
@@ -850,7 +838,7 @@ ul.skills li.sk-msw { --per: 75; }
 
   
   .card__side--front-1 {
-	background: linear-gradient(-45deg, #a30067, #007b71);
+	background: linear-gradient(-45deg, #090167, #008e82);
   }
   
   .card__side--back {
@@ -859,7 +847,7 @@ ul.skills li.sk-msw { --per: 75; }
   }
   
   .card__side--back-1 {
-	background: linear-gradient(-45deg, #007b71, #a30067);
+	background: linear-gradient(-45deg, #008e82, #090167);
   }
 
   .card:hover .card__side--front-1,
@@ -875,7 +863,7 @@ ul.skills li.sk-msw { --per: 75; }
   }
   
   .card__title {
-	height: 20rem;
+	height: 12rem;
 	padding: 4rem 2rem 2rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -893,15 +881,15 @@ ul.skills li.sk-msw { --per: 75; }
   }
   
   .card__title--1 .fas {
-	font-size: 4rem;
+	font-size: 3rem;
   }
   
   .card__title--2 .fas {
-	font-size: 4rem;
+	font-size: 3rem;
   }
   
   .card__title--3 .fas {
-	font-size: 4rem;
+	font-size: 3rem;
   }
   
   .card__heading {
@@ -925,7 +913,7 @@ ul.skills li.sk-msw { --per: 75; }
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-	width: 90%;
+	width:90%;
 	text-align: center;
   }
   
@@ -946,21 +934,18 @@ ul.skills li.sk-msw { --per: 75; }
 	font-weight: bolder;
   }
   
-  .row {
-	max-width: 114rem;
-	margin-bottom: 3%;
-	margin-left: 10%
-  }
-  
-  .row:not(:last-child) {
-	margin-top: 5rem;
+  .row2 {
+	margin-bottom: 6%;
+	margin-left:15px;
+	display: flex;
   }
  
-  .row [class^="col-"]:not(:last-child) {
-	margin-right: 6rem;
+ 
+  .row2 [class^="col-"]:not(:last-child) {
+	margin-right: 10rem;
   }
 
-  .row .col-1-of-3 {
+  .row2 .col-1-of-3 {
 	width: calc((100% - 2 * 6rem) / 3);
   }
   
