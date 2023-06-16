@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Building Blocks Game",
-    cardImage: "assets/images/project-page/Building_Blocks.jpg",
+    cardImage: "assets/images/project-page/Building_game.jpg",
     description: "",
     tagimg: "",
     Previewlink: "",
@@ -35,7 +35,7 @@ const projects = [
     description: "",
     tagimg: "",
     Previewlink: "",
-    Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
+    Githublink: "",
   },
   {
     title: "Analog clock",
