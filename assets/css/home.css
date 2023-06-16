@@ -174,12 +174,12 @@ figure .image-2:nth-child(9) {
 }
 
 .frame {
-  border: 10px solid rgb(7, 44, 45);
+  border: 10px solid rgb(1, 55, 52);
   border-radius: 50px;
  
 }
 .frame:hover {
-  box-shadow: 35px 35px 50px 20px rgb(7, 249, 237);
+  box-shadow: 35px 35px 50px 20px rgb(2, 129, 122);
 } 
 
 
@@ -656,6 +656,11 @@ a:hover {
   position: relative;
   transition: 0.25s ease-out;
 }
+
+html[light-mode="light"] .btn {
+color:#425454e4;
+}
+
 .btn::before, .btn::after {
   content: "";
   border-radius: inherit;
@@ -684,6 +689,16 @@ a:hover {
   box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
 }
  .btn:hover::before,  .btn:hover::after, .btn:focus::before, .btn:focus::after {
+  transform: none;
+  opacity: 1;
+}
+
+html[light-mode="light"] .btn:hover, .btn:focus {
+  color: hsla(var(--text-hover), 5);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+html[light-mode="light"] .btn:hover::before,  .btn:hover::after, .btn:focus::before, .btn:focus::after {
   transform: none;
   opacity: 1;
 }
