@@ -17,7 +17,7 @@ html[light-mode="light"] {
   --head-col: black;
   --tint-col: #ecf0f3;
   --black: hsl(0, 3%, 7%);
-  .contact-item-link:not(address):is(:hover, :focus) { color:#390374; }
+  .contact-item-link:not(address):is(:hover, :focus) { color:#00159f; }
 
 }
 
@@ -29,7 +29,7 @@ html[light-mode="dark"] {
   --head-col: #fff;
   --tint-col: #ecf0f3be;
   --white: hsl(200, 13%, 95%);
-  .contact-item-link:not(address):is(:hover, :focus) { color:rgb(5, 228, 217); }
+  .contact-item-link:not(address):is(:hover, :focus) { color:rgb(110, 168, 255); }
 
 }
 
@@ -39,7 +39,7 @@ html {
 }
 
 :root {
-  --jet: #6c023c;
+  --jet: #005b90;
   --ff-barlow: 'Barlow', sans-serif;
   --fs-4: 2rem;
   --fw-600: 600;
@@ -53,35 +53,25 @@ html {
   
   }
 
- 
-
-html[light-mode="dark"] .my_contact {
-
-  color:#894cde;
+html[light-mode="dark"] .my_contact {color:#894cde;
 }
 
-html[light-mode="light"] .my_contact {
-
-  color:#4e00bb;
+html[light-mode="light"] .my_contact {color:#4e00bb;
 }
 
 .contact_head {
   font-weight: bold;
   font-size: 70px;
-  margin-top: -10%;
-  
-}
-.dropdown1 .my_contact .contact_head{
-  padding-bottom: -50%;
-}
+  margin-top: -7%;
+} 
    
 .mapbox {
   position: relative;
-  height: 550px;
-  width: 750px;
+  height: 490px;
+  width: 685px;
   border-radius: 16px;
   margin-bottom: 52%;
-  margin-left: 2%;
+  margin-left: 6%;
   border: 8px solid var(--jet);
   overflow: hidden;
   margin-top:20% ;
@@ -103,16 +93,14 @@ html[light-mode="light"] .my_contact {
 }
 
 .contact-list{
-  margin-top: -86%;
+  margin-top: -84%;
   padding-left: 60%;
 }
 /* 
 .mapbox .contact-list
 {*/
 .twosection{
- padding-bottom:-5%;
- margin-top: -1%;
- 
+ margin-top: -6%;
 }
 
 .contact-item:not(:last-child) { margin-block-end: 30px; }
@@ -121,7 +109,7 @@ html[light-mode="light"] .my_contact {
   font-size: 3rem;
   padding: 15px;
   border-width: 0cap;
-  color: #07aef5;
+  color: #0d00ff;
 }
 
 .contact-item-title {
