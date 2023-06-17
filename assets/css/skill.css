@@ -107,7 +107,7 @@ section > div {
   margin: 0 auto;
 }
 .pre-heading{
-font-size: larger;
+font-size:22px;
 }
 .section {
   padding: 20px;
@@ -818,6 +818,7 @@ ul.skills li.sk-msw { --per: 75; }
 	height: 14rem;
 	width: 20rem;
 	color: #1f0042da;
+	
   }
   
   .card__side {
@@ -936,16 +937,31 @@ ul.skills li.sk-msw { --per: 75; }
   
   .row2 {
 	margin-bottom: 6%;
-	margin-left:15px;
+	margin-left:12%;
 	display: flex;
   }
  
  
   .row2 [class^="col-"]:not(:last-child) {
-	margin-right: 10rem;
+	margin-right: 1rem;
   }
 
   .row2 .col-1-of-3 {
+	width: calc((100% - 2 * 6rem) / 3);
+  }
+
+  .row1 {
+	margin-bottom: -1%;
+	margin-left:12%;
+	display: flex;
+  }
+ 
+ 
+  .row1 [class^="col-"]:not(:last-child) {
+	margin-right: 1rem;
+  }
+
+  .row1 .col-1-of-3 {
 	width: calc((100% - 2 * 6rem) / 3);
   }
   
