@@ -117,6 +117,10 @@ h1 {
   transform: translateX(-50%);
 }
 
+html[light-mode="light"] .timeline::before{
+  background: #5a5a5d;
+}
+
 .timeline-item {
   width: 100%;
 }
@@ -187,12 +191,12 @@ h1 {
 }
 
 .timeline-img {
-  width: 30px;
-  height: 30px;
-  background: #0ef7ff;
+  width: 35px;
+  height: 35px;
+  background: #6321cc;
   border-radius: 50%;
   position: absolute;
-  left: 50%;
+  left:49.8%;
   margin-top: 25px;
   margin-left: -15px;
 }
@@ -286,7 +290,6 @@ blockquote {
   }
 
   .row{
-
     margin-bottom:-10%;
   }
   
@@ -378,22 +381,24 @@ blockquote {
     transform: translateZ(0px);
   }
   .card .cover .price {
-    font-weight: bolder;
     position: absolute;
     top: 34px;
     right: 35px;
-    color: rgb(69, 240, 249);
+    color: rgb(138, 243, 249);
     transform-style: preserve-3d;
     transition: ease all 2.3s;
     z-index: 4;
-    font-size: 18px;
+    font-size: 20px;
     transform: translateZ(0px);
+  }
+  strong{
+    font-weight: bolder;
   }
   .card .card-back {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #7d3347;
+    background: #6b213e;
     transform-style: preserve-3d;
     transition: ease all 2.3s;
     transform: translateZ(-1px);
@@ -403,13 +408,13 @@ blockquote {
   }
   .card .card-back a {
     transform-style: preserve-3d;
-    transition: ease transform 2.3s, ease background 0.5s;
+    transition: ease transform 2.3s, ease all 0.5s;
     transform: translateZ(-1px) rotatey(-180deg);
     background: transparent;
-    border: 1px solid white;
+    border: 3px solid rgb(244, 165, 202);
     font-weight: 200;
     font-size: 1.3em;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 14px 32px;
     outline: none;
     text-decoration: none;
@@ -422,8 +427,7 @@ blockquote {
 
  /* Experience part ended here */
   
-
-
+ 
     /* Media Query  header/footer */
 
     @media (max-width: 768px) {

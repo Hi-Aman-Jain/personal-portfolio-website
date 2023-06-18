@@ -111,9 +111,9 @@ body {
   justify-content: center;
 }
 
-.container {
+/* .container {
   width: auto;
-}
+} */
 
 .btn {
   position: relative;
@@ -185,8 +185,6 @@ body {
     width: 300px;
   }
 }
-
-
 
 /*social icons footer*/
 

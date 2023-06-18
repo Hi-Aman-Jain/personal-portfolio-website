@@ -264,7 +264,7 @@ figure .image-2:nth-child(9) {
 /*Social icons*/
 
 :root {
-  --link-size: 64px;
+  --link-size: 60px;
   --trans-props: all 0.2s ease;
   --link-size-footer-b: 40px;
   --link-size-footer-s: 30px;
