@@ -1,10 +1,10 @@
 
 "use strict";
 // Sweet Alert CDN through JS
-let script = document.createElement("script");
-script.type = 'text/javascript';
-script.src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js";
-document.body.appendChild(script);
+// let script = document.createElement("script");
+// script.type = 'text/javascript';
+// script.src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js";
+// document.body.appendChild(script);
 
 // Header
 
@@ -337,7 +337,7 @@ $(function () {
 
 let loader = document.querySelector(".loader-container");
 
-window.addEventListener("load", vanish);
+window.addEventListener("DOMContentLoaded", vanish);
 
 function vanish() {
   loader.classList.add("disappear");
@@ -420,11 +420,11 @@ window.addEventListener("storage", function () {
 });
 
 // Function to remove scroll bar during preload
-$(window).on("load", function () {
+$(window).on("DOMContentLoaded", function () {
   setTimeout(function () {
     $(".no-scroll-preload").css("overflow", "visible");
   }, 10);
-  $(".loader-container").fadeOut(0);
+  $(".loader-container").fadeOut(10);
 });
 
 //send button animation
