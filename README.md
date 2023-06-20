@@ -22,7 +22,7 @@ The projects section features a visually striking design to captivate visitors' 
 ## Contact
 The contact section is designed to provide a seamless and user-friendly experience for visitors to get in touch with me. The design incorporates a clean and simple layout with easily accessible contact information. The use of embedded google map enhances the usability and aesthetics of the section. The design ensures that visitors can effortlessly reach out and connect with me for potential opportunities or inquiries.
 
-### Usage
+### Implementation
 To explore my portfolio website, simply clone or download this repository and open the index.html file in your web browser. You can navigate through the different sections using the navigation menu provided on each page. Feel free to explore the projects, and get in touch if you have any inquiries or opportunities to discuss.
 
 ### Contributions
