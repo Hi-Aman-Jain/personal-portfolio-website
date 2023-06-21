@@ -10,7 +10,7 @@ const projects = [
     cardImage: "assets/images/project-page/portfolio.jpg",
     description: "It's my unique way to showcase your work and let others know about yourself.",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/personal-portfolio-website/",
     Githublink: "https://github.com/Hi-Aman-Jain/portfolio-website",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     cardImage: "assets/images/project-page/Building_game.jpg",
     description: "",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/building-block_game/",
     Githublink: "https://github.com/Hi-Aman-Jain/building-block_game.git",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     cardImage: "assets/images/project-page/kill_bird.jpg",
     description: "In this game you have to shoot down the birds to score points. This is created with HTML And CSS only. No Javascript is needed.",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/my-digital-clock/",
     Githublink: "https://github.com/Hi-Aman-Jain/Bird_Game",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     cardImage: "assets/images/project-page/Api.jpg",
     description: "",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "Not finished Yet",
     Githublink: "",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     cardImage: "assets/images/project-page/analog.jpg",
     description: ".",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/Analog-clock/",
     Githublink: "https://github.com/Hi-Aman-Jain/Analog-clock",
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     cardImage: "assets/images/project-page/digitall-clock-img.jpg",
     description: "A type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analogue clock.",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/my-digital-clock/",
     Githublink: "https://github.com/Hi-Aman-Jain/mydigitalclock",
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     cardImage: "assets/images/project-page/calculator.jpg",
     description: "",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "https://hi-aman-jain.github.io/Calculator/",
     Githublink: "https://github.com/Hi-Aman-Jain/Calculator.git",
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     cardImage: "assets/images/project-page/googleclone.jpg",
     description: "",
     tagimg: "",
-    Previewlink: "",
+    Previewlink: "wait",
     Githublink: "https://github.com/Hi-Aman-Jain/googleclone.git",
   },
   
