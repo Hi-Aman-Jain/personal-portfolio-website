@@ -39,12 +39,13 @@ html {
 }
 
 :root {
-  --jet: #005b90;
+  --jet: #747272;
   --ff-barlow: 'Barlow', sans-serif;
   --fs-4: 2rem;
   --fw-600: 600;
  --transition-1: 0.5s ease;
 }
+
 
 .dropdown1 {
   position: absolute;
@@ -76,6 +77,14 @@ html[light-mode="light"] .my_contact {color:#4e00bb;
   overflow: hidden;
   margin-top:20% ;
 }
+
+html[light-mode="dark"] .mymap {
+filter:grayscale(100%) invert(100%);
+}
+
+html[light-mode="light"] .mymap {
+  filter:grayscale(0%) invert(0%);
+  }
  
 .mapbox figure { height: 100%; }
 
