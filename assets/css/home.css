@@ -74,28 +74,11 @@ body{
   margin-top: -15%;
   margin-left: 10%;
   border-radius: 2px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 8px 16px 0 rgb(86, 86, 86);
   overflow: hidden;
-  background: #fff;
-  color: #333;
   font-family: "Open Sans", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.text2 {
-  position: absolute;
-  pointer-events: none;
-  color: rgb(35, 236, 219);
-  font-weight: 700;
-  left: 37%;
-  top: 94%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-}
-.text2 p:nth-child(1) {
-  font-size: 2rem;
 }
 
 figure {
@@ -129,9 +112,7 @@ figure:hover .image-2 {
   opacity: 1;
   transform: translate(0) !important;
 }
-figure:hover + .text2 {
-  color:  rgb(7, 44, 45);
-}
+
 figure .image-2:nth-child(2) {
   background-position: 0px 0px;
   left: 0px;
@@ -174,13 +155,16 @@ figure .image-2:nth-child(9) {
 }
 
 .frame {
-  border: 10px solid rgb(1, 55, 52);
-  border-radius: 50px;
+  border: 4px solid rgb(41, 41, 41);
+  border-radius: 75px;
  
 }
 .frame:hover {
-  box-shadow: 35px 35px 50px 20px rgb(2, 129, 122);
+  box-shadow: 35px 35px 70px 20px rgb(86, 86, 86);
 } 
+.frame {
+  transition: box-shadow 0.8s ease;
+}
 
 
 /* Slice transition ended here */ 
@@ -403,33 +387,6 @@ a.socialicon {
           opacity: 1;
       }
 }
-
-
-/*
----------------------------
-   TWITTER MICROANIMATION
----------------------------
-*/
-.twitter-icon{
-  width: 40px;
-  margin-left: 12px;
-}
-
-.twitter:hover #wing1{
-      transform-origin:center;
-      animation: flap 0.4s ease-out infinite alternate;
-   }	
-   
-.twitter:hover #wing2{
-    transform-origin:center;
-    animation: flap 0.4s ease-in infinite alternate;
- }		
-
-@keyframes flap{
-     50%{
-      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
-     }
-   }
 
 /*
 --------------------------
