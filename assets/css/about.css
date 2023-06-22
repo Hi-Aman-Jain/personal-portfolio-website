@@ -97,24 +97,36 @@ html[light-mode="light"] .my-self {
 
   color:#4e00bb;
 }
+
 /* Resume button starts from here */
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-body, html {
-  height: 100%;
+/* Light Mode */
+html[light-mode="light"] .btn {
+  color: #000000;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+html[light-mode="light"] .btn::before {
+  background-color: #02d3cc;
 }
 
-/* .container {
-  width: auto;
-} */
+html[light-mode="light"] .btn::after {
+  background-color: #6200cb;
+}
 
+/* Dark Mode */
+html[light-mode="dark"] .btn {
+  color: #ffffff;
+}
+
+html[light-mode="dark"] .btn::before {
+  background-color: #02d3cc;
+}
+
+html[light-mode="dark"] .btn::after {
+  background-color: #6200cb;
+}
+
+/* Common styles for both light and dark modes */
 .btn {
   position: relative;
   letter-spacing: 0.15em;
@@ -125,7 +137,9 @@ body {
   font-size: 28px;
   font-weight: bolder;
 }
-.btn::after, .btn::before {
+
+.btn::after,
+.btn::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -134,27 +148,32 @@ body {
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -2;
 }
+
 .btn::before {
-  background-color: #02d3cc;
   top: -1rem;
   left: 0rem;
 }
+
 .btn::after {
-  background-color: #6200cb;
   top: 1rem;
   left: 7.5rem;
 }
-.btn:hover::before, .btn:hover::after {
+
+.btn:hover::before,
+.btn:hover::after {
   top: 0;
   transform: skewx(0deg);
 }
+
 .btn:hover::after {
   left: .8rem;
 }
+
 .btn:hover::before {
   left: 7rem;
 }
-/* Resume btton ends here */
+
+/* Resume button ended here */
 
 /*Responsive*/
 

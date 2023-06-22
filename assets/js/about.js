@@ -2,8 +2,6 @@
 
 const aboutTable = document.querySelector(".main");
 
-
-
 AOS.init();
 const fillData = () => {
   let output = "";
@@ -36,14 +34,7 @@ const fillData = () => {
                     </div>
                     
                     <!--CITE BUTTON-->
-                    <div class="d-flex" style="margin-right:5%;">
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
-                            ABSTRACT
-                        </button>
-                
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            CITE
-                        </button>
+                    
                     </div>
                     <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
                         <div class="card-body">
