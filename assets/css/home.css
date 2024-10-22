@@ -591,93 +591,81 @@ a:hover {
 
 /* glowing botton css started here */
 
-.btn  {
-  --text-base: 277deg, 55%, 40%;
-  --text-hover:var(--col-white);
-  --shadow-start: 52deg, 100%, 72%;
-  --shadow-end: 282deg, 90%, 50%;
-  --shadow-inner: 277deg, 90%, 62%;
-  all: unset;
-  color:#acf9ff57;
-  font: 700 1.125rem/1.2 Raleway, sans-serif;
-  letter-spacing: 0.08em;
-  text-align: center;
-  padding: 0.85em;
-  font-size: 25px;
-  max-width: 35%;
-  background: inherit;
-  background-clip: padding-box;
-  border: 7px solid hsla(var(--text-base), 1);
-  border-radius: 2em;
-  cursor: pointer;
-  position: relative;
-  transition: 0.25s ease-out;
-}
-
-html[light-mode="light"] .btn {
-color:#425454e4;
-}
-
-.btn::before, .btn::after {
-  content: "";
-  border-radius: inherit;
-  transition: inherit;
+/* CSS */
+.btn-container {
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-.btn::before {
-  inset: -0.2em;
-  z-index: -1;
-  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
-  filter: blur(1.2em) saturate(1.2);
-  transform-origin: bottom;
-  transform: scaleY(0.5);
-  opacity: 0;
-}
-.btn::after {
-  box-shadow: inset 0 0 0 2px #fdfdfd, 0 0 0 6px rgb(132, 2, 76), 5px 5px 0 6px #f45497;
-  mix-blend-mode: overlay;
-  opacity:1;
-}
-.btn:hover, .btn:focus {
-  color: hsla(var(--text-hover), 5);
-  border-color: transparent;
-  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
-}
- .btn:hover::before,  .btn:hover::after, .btn:focus::before, .btn:focus::after {
-  transform: none;
-  opacity: 1;
-}
-
-html[light-mode="light"] .btn:hover, .btn:focus {
-  color: hsla(var(--text-hover), 5);
-  border-color: transparent;
-  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
-}
-html[light-mode="light"] .btn:hover::before,  .btn:hover::after, .btn:focus::before, .btn:focus::after {
-  transform: none;
-  opacity: 1;
-}
-
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  place-content: center;
-  place-items: center;
-}
-
-/* body,
-.container {
-  background: hsla(var(--page-background), 1);
-} */
-
-.container {
-  padding-top: 5%;
-  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 22%;
   z-index: 1;
+  width: 50%;
+  text-align: center;
 }
+
+.btn-about {
+  appearance: none;
+  background-color: rgba(165, 133, 255, 0.16);
+  border-radius: 40em;
+  border: 4px solid #ea9eff34;
+  box-shadow: 
+      #e385ff 0 -12px 6px inset,
+      0 0 15px #c078ff;
+  box-sizing: border-box;
+  color: #adadad;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  outline: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-about:hover {
+  background-color: rgba(128, 0, 90, 0.361);
+  box-shadow: 
+      #ff96c9 0 -6px 8px inset,
+      0 0 20px #f45497;
+  transform: scale(1.125);
+  color: #ffffff;
+  border-color: #ffa1c8;
+}
+
+.btn-about:active {
+  transform: scale(1.025);
+}
+
+/* Light mode styles */
+html[light-mode="light"] .btn-about {
+  background-color: rgba(66, 84, 84, 0.1);
+  color: #425454;
+  border-color: #425454;
+  box-shadow: 
+      #425454 0 -12px 6px inset,
+      0 0 15px #425454;
+}
+
+html[light-mode="light"] .btn-about:hover {
+  background-color: rgba(66, 84, 84, 0.2);
+  color: #425454;
+  box-shadow: 
+      #425454 0 -6px 8px inset,
+      0 0 20px #425454;
+}
+
+@media (min-width: 768px) {
+  .btn-about {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+  }
+}
+
+/* glowing botton css ends here */
