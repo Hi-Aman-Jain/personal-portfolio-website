@@ -608,7 +608,7 @@ a:hover {
   border-radius: 40em;
   border: 4px solid #ea9eff34;
   box-shadow: 
-      #e385ff 0 -12px 6px inset,
+      #e385ff 0 -8px 8px inset,
       0 0 15px #c078ff;
   box-sizing: border-box;
   color: #adadad;
@@ -632,7 +632,7 @@ a:hover {
 .btn-about:hover {
   background-color: rgba(128, 0, 90, 0.361);
   box-shadow: 
-      #ff96c9 0 -6px 8px inset,
+      #ff96c9 0 6px 8px inset,
       0 0 20px #f45497;
   transform: scale(1.125);
   color: #ffffff;
