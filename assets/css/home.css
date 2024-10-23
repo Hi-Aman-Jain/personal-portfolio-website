@@ -649,15 +649,15 @@ html[light-mode="light"] .btn-about {
   color: #425454;
   border-color: #425454;
   box-shadow: 
-      #425454 0 -12px 6px inset,
+      #425454 0 -8px 10px inset,
       0 0 15px #425454;
 }
 
 html[light-mode="light"] .btn-about:hover {
   background-color: rgba(66, 84, 84, 0.2);
-  color: #425454;
+  color: #000000;
   box-shadow: 
-      #425454 0 -6px 8px inset,
+      #425454 0 8px 10px inset,
       0 0 20px #425454;
 }
 
