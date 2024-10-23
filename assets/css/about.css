@@ -98,40 +98,35 @@ html[light-mode="light"] .my-self {
   color:#4e00bb;
 }
 
-/* Resume button starts from here */
+/* Resume button styles -------->>>*/
 
 /* Light Mode */
 html[light-mode="light"] .btn {
   color: #000000;
-  background-image: linear-gradient(147deg, #386565, #2d1743);
-  }
-
-html[light-mode="light"] .btn:hover{
-  transform: skewx(0deg);
+  text-shadow: #ffffff 2px 2px 2px;
+  position: relative;
+  z-index: 1;
 }
-
 html[light-mode="light"] .btn::before {
-  background-color: #6c1fcb;
+  background-color: #9a3bff;
 }
-
 html[light-mode="light"] .btn::after {
-  background-color: #14c9cf;
+  background-color: #4ffff9;
 }
 
 /* Dark Mode */
 html[light-mode="dark"] .btn {
   color: #ffffff;
+  text-shadow: #000000 2px 2px 2px;
 }
-
 html[light-mode="dark"] .btn::before {
   background-color: #02d3cc;
 }
-
 html[light-mode="dark"] .btn::after {
   background-color: #6200cb;
 }
 
-/* Common styles for both light and dark modes */
+/* Common styles for both modes */
 .btn {
   position: relative;
   letter-spacing: 0.15em;
@@ -171,14 +166,12 @@ html[light-mode="dark"] .btn::after {
 }
 
 .btn:hover::after {
-  left: .8rem;
+  left: 0.8rem;
 }
 
 .btn:hover::before {
   left: 7rem;
 }
-
-/* Resume button ended here */
 
 /*Responsive*/
 
