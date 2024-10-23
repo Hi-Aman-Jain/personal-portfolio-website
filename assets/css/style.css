@@ -3,21 +3,20 @@
   src: url(../fonts/Agustina.woff);
 }
 
-
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
   --bg-mybtn: red;
   --bg-nav: black;
   --bg-nav-img: black;
-  --bg-footer: #DDE1EC;
+  --bg-footer: #dde1ec;
   --bg: #ffffff;
   --text: #191919;
   --text-color: #6c757d;
   --col-icon: black;
   --col-bd-radius: rgb(2, 2, 2);
-  --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
-  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
+  --col-box-shadow: #000000 2px 2px 4px, #4d4d4d -2px -2px 4px;
+  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4d4d4d -2px -2px 4px;
   --col-bd-icon: transparent;
   --bg-icon: #fff;
   --col-icon-twitter: #1da1f2;
@@ -46,8 +45,10 @@ html[data-theme="dark"] {
   --col-icon: white;
   --col-bd-radius: black;
   --col-bd-icon: transparent;
-  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
-  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px,
+    inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -60,7 +61,6 @@ html[data-theme="dark"] {
   --col-icon-leetcode: rgb(255, 181, 62);
   --col-white: #fff;
 }
-
 
 /*
 ---------------------------
@@ -88,11 +88,10 @@ html[data-theme="dark"] {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ca9eff;
-  
 }
 
 /* Custom Scrollbar for Mozilla Firefox*/
-html{
+html {
   overflow-y: visible;
   scrollbar-color: #ca9eff #f1f1f1;
   scrollbar-width: auto;
@@ -109,7 +108,6 @@ body {
 .text-center heading1 exp-head {
   color: white;
 }
-
 
 /* Scroll to Top button */
 
@@ -131,7 +129,6 @@ body {
   -webkit-animation: up 1.5s infinite;
 }
 
-
 /*
 ---------------------------------------
  SCROLL TO TOP BUTTON MICROANIMATION
@@ -140,35 +137,33 @@ body {
 
 @keyframes up {
   0% {
-      transform: translate(0);
+    transform: translate(0);
   }
   20% {
-      transform: translateY(-15px);
+    transform: translateY(-15px);
   }
   40% {
-      transform: translate(0);
+    transform: translate(0);
   }
 }
 
 @-webkit-keyframes up {
   0% {
-      transform: translate(0);
+    transform: translate(0);
   }
   20% {
-      transform: translateY(-15px);
+    transform: translateY(-15px);
   }
   40% {
-      transform: translate(0);
+    transform: translate(0);
   }
 }
-
 
 /* smooth scrolling to top */
 
 html {
   scroll-behavior: smooth;
 }
-
 
 /*
 ------------------------------------
@@ -193,11 +188,11 @@ html {
 .third {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
-  height: .45em;
+  height: 0.45em;
   width: 100%;
   float: left;
   border-radius: 2px;
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .first {
@@ -205,34 +200,27 @@ html {
 }
 
 .is-active .first {
-  transform-origin: .167em .33em;
+  transform-origin: 0.167em 0.33em;
   transform: rotate(45deg) translate(0.167em, -0.25em);
 }
 
 .second {
   top: 50%;
-  margin-top: -.25em;
+  margin-top: -0.25em;
 }
 
 .is-active .second {
   opacity: 0;
-  transform: translateX(8em)
+  transform: translateX(8em);
 }
 
 .third {
   bottom: 0px;
-  transform-origin: .25em -0.33em;
+  transform-origin: 0.25em -0.33em;
 }
 
 .is-active .third {
   transform: rotate(-45deg) translate(-0.167em, 0.083em);
-}
-
-.navbar-brand {
-  font-family:Agustina;
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 10px;
 }
 
 .navbar {
@@ -284,7 +272,7 @@ html {
 
 html {
   background-color: #ffffff;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 html[light-mode="dark"] {
@@ -294,18 +282,8 @@ html[light-mode="dark"] {
 
 .dark-theme {
   background-color: #2c2332;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   box-shadow: 0 0 0;
-}
-
-.dark-theme .navbar-nav .nav-link,
-.dark-theme .navbar-brand {
-  color: rgba(255, 255, 255, 0.598);
-  font-weight: 100%;
-}
-
-html[light-mode="dark"] .navbar-brand:hover{
-  color: #f90160 ;
 }
 
 .dark-theme .first,
@@ -313,10 +291,10 @@ html[light-mode="dark"] .navbar-brand:hover{
 .dark-theme .third {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.dsc{
-   box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
-   inset -2px -5px 5px 0px rgb(130 216 251);
-   background: #1f1d1d;
+.dsc {
+  box-shadow: 2px 5px 5px 0px rgb(130 216 251),
+    inset -2px -5px 5px 0px rgb(130 216 251);
+  background: #1f1d1d;
 }
 /*
 -------------------------------------
@@ -349,31 +327,30 @@ html[light-mode="dark"] .navbar-brand:hover{
 
 @keyframes wheel {
   from {
-      transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
-      transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
 @keyframes bikes {
   from {
-      transform: rotateX(0deg);
+    transform: rotateX(0deg);
   }
   to {
-      transform: rotateX(12deg);
+    transform: rotateX(12deg);
   }
 }
 
 @keyframes hat {
   from {
-      transform: translateY(0%) rotateZ(0deg);
+    transform: translateY(0%) rotateZ(0deg);
   }
   to {
-      transform: translateY(10%) rotateZ(20deg);
+    transform: translateY(10%) rotateZ(20deg);
   }
 }
-
 
 /*
 -------------------------------------
@@ -383,74 +360,103 @@ html[light-mode="dark"] .navbar-brand:hover{
 
 @media only screen and (min-width: 1024px) {
   .current-link {
-      font-weight: bolder;
-      position: relative;
-      z-index: 1;
-      text-align: center;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    text-align: center;
   }
   .current-link:after {
-      content: "";
-      position: absolute;
-      left: 34%;
-      margin-left: auto;
-      margin-right: auto;
-      bottom: 0;
-      width: 32%;
-      border-bottom: 3px solid #6a00bb;
+    content: "";
+    position: absolute;
+    left: 34%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    width: 32%;
+    border-bottom: 3px solid #6a00bb;
   }
-  
+
   .nav-item-hover::after {
-      content: "";
-      display: block;
-      margin-left: auto;
-      margin-right:auto;
-      height: 0.15em;
-      bottom: 0;
-      width: 0%;
-      background-color: #6a00bb;
-      transition: all ease-in-out 280ms;
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.15em;
+    bottom: 0;
+    width: 0%;
+    background-color: #6a00bb;
+    transition: all ease-in-out 280ms;
   }
-  
+
   .nav-item:hover::after {
-      width: 60%;
-      
+    width: 60%;
   }
 
   li.nav-item {
-      text-align: center;
-      font-size:larger;
+    text-align: center;
+    font-size: larger;
   }
   a.nav-link {
-      padding: 6px 21px !important;
+    padding: 6px 21px !important;
   }
 
   /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
   .bike {
-      display: none;
+    display: none;
   }
 }
 
 /* navbar hover for light mode */
-html[light-mode="light"] .nav-link{
+html[light-mode="light"] .nav-link {
   color: #000000 !important;
 }
-html[light-mode="light"] .nav-link:hover{
-  color: 	rgb(106, 0, 187) !important;
+html[light-mode="light"] .nav-link:hover {
+  color: rgb(106, 0, 187) !important;
 }
-html[light-mode="light"] .navbar-brand:hover{
-  color: #000000 !important;
+
+/* Navbar brand styles ------------>>> */
+
+.navbar-brand {
+  font-family: Agustina;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 10px;
+  transition: all 0.5s ease; 
 }
-html[light-mode="light"] .navbar-brand{
-  color: #f90160 !important;
+
+/* Dark mode styles */
+.dark-theme .navbar-nav .nav-link,
+.dark-theme .navbar-brand {
+  color: #ffffff98;
+  font-weight: 100%;
 }
+
+/* Dark mode hover */
+html[light-mode="dark"] .navbar-brand:hover {
+  color: #a319ff;
+  transform: scale(1.1); 
+  text-shadow: #02d3cc 3px 3px 2px;
+}
+
+/* Light mode styles */
+html[light-mode="light"] .navbar-brand {
+  color: #000000;
+}
+
+/* Light mode hover */
+html[light-mode="light"] .navbar-brand:hover {
+  color: #6700ac;
+  transform: scale(1.1); 
+  text-shadow: #00a49e 3px 3px 2px;
+}
+
+/* <<<<<---------------Navbar brand name style */
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-      align-items: center;
-      
+    align-items: center;
   }
 }
-
 
 /**Navbar burger animations**/
 
@@ -460,7 +466,7 @@ html[light-mode="light"] .navbar-brand{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-color: white;
   border: none;
   outline: none;
@@ -472,7 +478,8 @@ html[light-mode="light"] .navbar-brand{
   fill: none;
   stroke: black;
   stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 50px;
 }
 
@@ -509,13 +516,11 @@ html[light-mode="light"] .navbar-brand{
   stroke-width: 6;
 }
 
-
 /*
 ------------------------
   FOOTER SECTION
 ------------------------
 */
-
 
 /* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 
@@ -538,7 +543,7 @@ html[light-mode="light"] .navbar-brand{
 }
 
 .svg-inline--fa {
-  vertical-align: -0.200em;
+  vertical-align: -0.2em;
 }
 
 .rounded-social-buttons .social-button {
@@ -560,7 +565,6 @@ html[light-mode="light"] .navbar-brand{
   margin-bottom: 0.25rem;
 }
 
-
 /********
 Rotate Transition in foote Soical Icon
 *********/
@@ -569,7 +573,6 @@ Rotate Transition in foote Soical Icon
 .rounded-social-buttons .social-button:focus {
   transition: background-color 0.3s, var(--trans-props);
 }
-
 
 /*
 ------------------------------
@@ -589,10 +592,9 @@ Rotate Transition in foote Soical Icon
 
 @keyframes flap {
   50% {
-      transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+    transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
   }
 }
-
 
 /*
 -----------------------------
@@ -600,37 +602,36 @@ Rotate Transition in foote Soical Icon
 -----------------------------
 */
 
-.linkedin:hover .linkedin-icon-footer>rect {
+.linkedin:hover .linkedin-icon-footer > rect {
   animation: rect-up 0.3s linear infinite;
 }
 
 @keyframes rect-up {
   50% {
-      y: 10px;
-      height: 11px;
+    y: 10px;
+    height: 11px;
   }
   0% {
-      y: 13px;
-      height: 8px;
+    y: 13px;
+    height: 8px;
   }
 }
 
-.linkedin:hover .linkedin-icon-footer>circle {
+.linkedin:hover .linkedin-icon-footer > circle {
   animation: bounce 0.4s linear infinite;
 }
 
 @keyframes bounce {
   75% {
-      cy: 8px;
+    cy: 8px;
   }
   50% {
-      cy: 4px
+    cy: 4px;
   }
   0% {
-      cy: 4px
+    cy: 4px;
   }
 }
-
 
 /*
 -----------------------------
@@ -640,7 +641,7 @@ Rotate Transition in foote Soical Icon
 
 .st0 {
   fill: none;
-  stroke: #EF4649;
+  stroke: #ef4649;
   stroke-width: 7;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -660,32 +661,31 @@ Rotate Transition in foote Soical Icon
 }
 
 .instagram-icon-footer:hover #lens {
-  fill: #EF4649;
+  fill: #ef4649;
   animation: lens 1.5s linear infinite;
 }
 
 @keyframes shutter {
   0%,
   50% {
-      stroke-dashoffset: 150;
+    stroke-dashoffset: 150;
   }
   75% {
-      fill: #EF4649;
-      stroke-dashoffset: 0;
-      stroke-width: 11;
+    fill: #ef4649;
+    stroke-dashoffset: 0;
+    stroke-width: 11;
   }
 }
 
 @keyframes lens {
   0%,
   75% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
-
 
 /*
 -----------------------------
@@ -700,13 +700,12 @@ Rotate Transition in foote Soical Icon
 
 @keyframes moveArm {
   0% {
-      transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   100% {
-      transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 }
-
 
 /* twitter SVG micro animation */
 
@@ -715,14 +714,12 @@ Rotate Transition in foote Soical Icon
   width: 35px;
 }
 
-
 /* linkedin SVG micro animation */
 
 .linkedin-icon-footer {
   margin-bottom: 8px;
   width: 30px;
 }
-
 
 /* instagram SVG micro animation */
 
@@ -732,14 +729,12 @@ Rotate Transition in foote Soical Icon
   padding-bottom: 8px;
 }
 
-
 /* github SVG Micro animation */
 
 .github-icon-footer {
   margin-bottom: 8px;
   width: 35px;
 }
-
 
 /*
 ----------------------------------------
@@ -748,50 +743,49 @@ Rotate Transition in foote Soical Icon
 */
 
 .rounded-social-buttons .social-button.twitter {
-  background: #2b2a2A;
+  background: #2b2a2a;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.twitter:hover,
 .rounded-social-buttons .social-button.twitter:focus {
   color: #000;
-  background: #2b2a2A;
+  background: #2b2a2a;
 }
 
 .rounded-social-buttons .social-button.linkedin {
-  background: #2b2a2A;
+  background: #2b2a2a;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.linkedin:hover,
 .rounded-social-buttons .social-button.linkedin:focus {
   color: #000;
-  background: #2b2a2A;
+  background: #2b2a2a;
 }
 
 .rounded-social-buttons .social-button.instagram {
-  background: #2b2a2A;
+  background: #2b2a2a;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
   color: #000;
-  background: #2b2a2A;
+  background: #2b2a2a;
 }
 
 .rounded-social-buttons .social-button.github {
   fill: #ffff;
-  background: #2b2a2A;
+  background: #2b2a2a;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.github:hover,
 .rounded-social-buttons .social-button.github:focus {
   color: #000000;
-  background: #2b2a2A;
+  background: #2b2a2a;
 }
-
 
 /************
 Contact Form In Footer
@@ -818,7 +812,6 @@ form {
   margin: 15px auto;
   color: #000;
 }
-
 
 /*
 -------------------
@@ -853,10 +846,10 @@ form {
 .form-style-6 input[type="url"],
 .form-style-6 textarea,
 .form-style-6 select {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   outline: none;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -908,8 +901,7 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-  background:#6a00bbd2;;
-
+  background: #6a00bbd2;
 }
 
 .form-comtainer {
@@ -924,78 +916,76 @@ form {
   height: 1.5px;
 }
 
-
 /* to make the navbar open full screen on mobile */
 
 @media (max-width: 85px) {
   .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-      
+    display: flex;
+    justify-content: center;
   }
   .footer {
-      padding-top: 10px;
+    padding-top: 10px;
   }
   #navbar-content {
-      margin-top: -200px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
+    margin-top: -200px;
+    height: 120vh;
+    text-align: center;
+    transform: translateY(25%);
   }
   #btnScrollToTop {
-      display: none;
+    display: none;
   }
 }
 
 @media (max-width: 85px) {
   .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
+    margin-top: -180px;
+    height: 120vh;
+    text-align: center;
+    transform: translateY(25%);
   }
   #btnScrollToTop {
-      display: none;
+    display: none;
   }
 }
 
 @media (max-width: 85%) {
   .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
-  
+
   #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
+    margin-top: -180px;
+    height: 120vh;
+    text-align: center;
+    transform: translateY(25%);
   }
   #btnScrollToTop {
-      display: none;
+    display: none;
   }
 }
 
 @media (max-width: 85px) {
   .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   #navbar-content {
-      margin-top: -140px;
-      height: 130vh;
-      text-align: center;
-      transform: translateY(25%);
+    margin-top: -140px;
+    height: 130vh;
+    text-align: center;
+    transform: translateY(25%);
   }
   .footer {
-      margin-top: 6rem;
+    margin-top: 6rem;
   }
   #btnScrollToTop {
-      display: none;
+    display: none;
   }
 }
 
@@ -1009,17 +999,15 @@ Send button micro animation
   position: relative;
   margin-left: 4rem;
   width: 270px;
-  
 }
- button{
-width: 15rem;
-height: 2.5rem;
-outline: none;
+button {
+  width: 15rem;
+  height: 2.5rem;
+  outline: none;
 }
-#lnch :hover{
-    cursor: pointer;
-    outline: none;
-    
+#lnch :hover {
+  cursor: pointer;
+  outline: none;
 }
 #lnch {
   font-size: 25px;
@@ -1039,7 +1027,7 @@ outline: none;
   font-size: 22px;
   line-height: 1;
   color: #fff;
- padding: 10px 50px;
+  padding: 10px 50px;
   cursor: pointer;
   transition: 0.3s ease transform;
 }
