@@ -537,7 +537,7 @@ ul.skills li span:after {
 	top: 38px;
 	transition: var(--t1);
 	counter-reset: percent var(--per);
-	/*content: counter(percent) "%";*/
+	content: counter(percent) "%";
 	content: counter(percent);
 	color: var(--b2);
 	opacity: 1 !important;
@@ -568,15 +568,24 @@ ul.skills3 li:hover span:after {
 /*** SKILLS VALUES ***/
 /*********************/
 
+ul.skills li {
+    position: relative;
+}
+
+ul.skills li::after {
+    content: attr(data-percent) '%';
+    position: absolute;
+}
+
       /* Technical skill values */
 
 ul.skills li.sk-web { --per: 75; }
 ul.skills li.sk-cod { --per: 60; }
-ul.skills li.sk-dsa { --per: 55; }
+ul.skills li.sk-dsa { --per: 75; }
 ul.skills li.sk-dbm { --per: 65; }
-ul.skills li.sk-gra { --per: 70; }
-ul.skills li.sk-con { --per: 70; }
-ul.skills li.sk-vid { --per: 75; }
+ul.skills li.sk-gra { --per: 65; }
+ul.skills li.sk-con { --per: 74; }
+ul.skills li.sk-vid { --per: 78; }
 
         /* Soft skill values */
 
@@ -588,29 +597,25 @@ ul.skills li.sk-del { --per: 80; }
 ul.skills li.sk-emp { --per: 75; }
 ul.skills li.sk-sin { --per: 80; }
 
-       /* Codes skill values */
+       /* Language skill values */
  
-ul.skills li.sk-ccc { --per: 65; }
+ul.skills li.sk-ccc { --per: 75; }
 ul.skills li.sk-cpl { --per: 70; }
-ul.skills li.sk-jav { --per: 75; }
-ul.skills li.sk-pyt { --per: 65; }
-ul.skills li.sk-sql { --per: 55; }
-ul.skills li.sk-htm { --per: 80; }
-ul.skills li.sk-css { --per: 75; }
-ul.skills li.sk-jss { --per: 55; }
-ul.skills li.sk-rec { --per: 50; }
+ul.skills li.sk-jav { --per: 77; }
+ul.skills li.sk-sql { --per: 70; }
+ul.skills li.sk-htm { --per: 95; }
+ul.skills li.sk-css { --per: 95; }
+ul.skills li.sk-jss { --per: 65; }
 
         /* Tool skill values */
 
-ul.skills li.sk-vsc { --per: 80; }
+ul.skills li.sk-vsc { --per: 90; }
 ul.skills li.sk-dev { --per: 70; }
-ul.skills li.sk-git { --per: 75; }
-ul.skills li.sk-msq { --per: 65; }
-ul.skills li.sk-aps { --per: 70; }
-ul.skills li.sk-cop { --per: 65; }
-ul.skills li.sk-mpp { --per: 80; }
+ul.skills li.sk-git { --per: 80; }
+ul.skills li.sk-aps { --per: 82; }
+ul.skills li.sk-cop { --per: 66; }
+ul.skills li.sk-mpp { --per: 60; }
 ul.skills li.sk-mse { --per: 70; }
-ul.skills li.sk-msw { --per: 75; }
 
 /*********************/
 /***** TOP LABELS ****/
