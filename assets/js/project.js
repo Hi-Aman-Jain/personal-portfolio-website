@@ -7,7 +7,7 @@ const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
     title: "Personal Portfolio Website",
-    cardImage: "assets/images/project-page/Portfolio.jpg",
+    cardImage: "./assets/images/project-page/Portfolio.jpg",
     description: "",
     tagimg: "",
     Previewlink: "https://hi-aman-jain.github.io/personal-portfolio-website/",
