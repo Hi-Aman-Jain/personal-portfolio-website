@@ -258,7 +258,7 @@ html {
 }
 
 .dark_toggler:checked {
-  background-image: url(assets/css/tough-img/dark-mode.png);
+  background-image: url(./assets/css/dark-mode.png);
   transition: background-image 0.9s;
   box-shadow: 0px 2px 5px 1px rgb(178, 230, 247);
 }
