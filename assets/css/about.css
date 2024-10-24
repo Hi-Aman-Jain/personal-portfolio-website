@@ -59,43 +59,45 @@ body {
   padding-top: 10%;
   font-size: 17.8px;
   color: var(--head-col);
-  font-family:cursive;
-    
+  font-family: cursive;
+
 }
 
-.section-2{
+.section-2 {
   width: 100%;
   margin-top: -185px;
   margin-left: 20px;
 }
-.my-about-wrapper .about{
+
+.my-about-wrapper .about {
   font-size: 85px;
   margin-top: 7%;
-  font-weight:bold;
+  font-weight: bold;
   color: var(--head-col);
 }
-.my-self{
+
+.my-self {
   margin: auto;
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 2.px;
   display: block;
-  text-align:center;
+  text-align: center;
   position: relative;
   top: 65px;
   left: 25px;
- 
+
   margin-top: -110px;
 }
 
 html[light-mode="dark"] .my-self {
 
-  color:#894cde;
+  color: #894cde;
 }
 
 html[light-mode="light"] .my-self {
 
-  color:#4e00bb;
+  color: #4e00bb;
 }
 
 /* Resume button styles -------->>>*/
@@ -107,9 +109,11 @@ html[light-mode="light"] .btn {
   position: relative;
   z-index: 1;
 }
+
 html[light-mode="light"] .btn::before {
   background-color: #9a3bff;
 }
+
 html[light-mode="light"] .btn::after {
   background-color: #4ffff9;
 }
@@ -119,9 +123,11 @@ html[light-mode="dark"] .btn {
   color: #ffffff;
   text-shadow: #000000 2px 2px 2px;
 }
+
 html[light-mode="dark"] .btn::before {
   background-color: #02d3cc;
 }
+
 html[light-mode="dark"] .btn::after {
   background-color: #6200cb;
 }
@@ -179,6 +185,7 @@ html[light-mode="dark"] .btn::after {
   .aboutTitleName a {
     font-size: px;
   }
+
   .aboutTitleName div {
     font-size: 12px;
   }
@@ -188,11 +195,11 @@ html[light-mode="dark"] .btn::after {
   .aboutTitleName {
     width: 300px;
   }
-  
+
 }
-@media only screen and (min-width:712px) and (max-width: 960px)
-{
-  .aboutY{
+
+@media only screen and (min-width:712px) and (max-width: 960px) {
+  .aboutY {
     margin-bottom: 5.8em;
   }
 }
@@ -243,10 +250,12 @@ html[light-mode="dark"] .btn::after {
   .social-icons-footer {
     width: 280px;
   }
+
   .social-icon-footer {
     width: var(--link-size-footer-b);
     height: var(--link-size-footer-b);
   }
+
   .social-icon-footer i {
     font-size: 20px;
   }
@@ -274,10 +283,12 @@ a:hover {
 */
 
 @keyframes plantone {
+
   0%,
   to {
     transform: scaleY(1) rotate(0deg);
   }
+
   50% {
     transform: scaleY(1.02) rotate(1deg);
   }
@@ -288,9 +299,11 @@ a:hover {
     transform: scaleY(1.02);
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   to {
     transform: scaleY(1);
     opacity: 0;
@@ -298,10 +311,12 @@ a:hover {
 }
 
 @keyframes head {
+
   0%,
   to {
     transform: rotate(0deg);
   }
+
   85% {
     transform: rotate(3deg);
   }
@@ -311,41 +326,49 @@ a:hover {
   0% {
     transform: scaleX(1) scaleY(1) rotate(0deg);
   }
+
   25% {
     transform: scaleX(1.03) rotate(0deg);
   }
+
   50% {
     transform: scaleY(1.03) rotate(0deg);
   }
 }
 
 @keyframes sleave {
+
   0%,
   to {
     transform: rotate(0deg);
   }
+
   85% {
     transform: rotate(3deg);
   }
 }
 
 @keyframes arm {
+
   0%,
   to {
     transform: translateX(0) rotate(0deg);
   }
+
   85% {
     transform: translateX(-15px) rotate(0deg);
   }
 }
 
 @keyframes armright {
+
   0%,
   10%,
   80%,
   to {
     transform: rotate(0deg);
   }
+
   40%,
   50% {
     transform: rotate(-4deg);
@@ -356,34 +379,43 @@ a:hover {
   0% {
     transform: translateX(1200px);
   }
+
   50% {
     transform: translateX(0);
   }
+
   75% {
     transform: translateX(50px);
   }
+
   90% {
     transform: translateX(42px);
   }
+
   to {
     transform: translateX(45px);
   }
 }
 
 @keyframes verascalein {
+
   0%,
   15% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   75% {
     transform: scale(0.98);
   }
+
   90% {
     transform: scale(1.01);
   }
+
   to {
     transform: scale(1);
   }
@@ -393,15 +425,19 @@ a:hover {
   0% {
     transform: translateY(-1200px);
   }
+
   50% {
     transform: translateY(45px);
   }
+
   75% {
     transform: translateY(-5px);
   }
+
   90% {
     transform: translateY(3px);
   }
+
   to {
     transform: translateY(0);
   }
@@ -435,23 +471,25 @@ a:hover {
   transform-origin: 1009.149px 711.625px;
 }
 
-.container.about-upper.pt-5{
+.container.about-upper.pt-5 {
   max-width: 100%;
 }
 
-@media screen and (min-width: 711px) and (max-width: 1000px){
-  .imgCol{
+@media screen and (min-width: 711px) and (max-width: 1000px) {
+  .imgCol {
     width: 35%;
   }
+
   .aboutTitleName {
     width: 65%;
   }
 }
 
-@media screen and (min-width: 711px) and (max-width: 850px){
-  .imgCol{
+@media screen and (min-width: 711px) and (max-width: 850px) {
+  .imgCol {
     width: 40%;
   }
+
   .aboutTitleName {
     width: 60%;
   }

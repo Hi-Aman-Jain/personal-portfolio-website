@@ -105,6 +105,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
 }
+
 .text-center heading1 exp-head {
   color: white;
 }
@@ -139,9 +140,11 @@ body {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translateY(-15px);
   }
+
   40% {
     transform: translate(0);
   }
@@ -151,9 +154,11 @@ body {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translateY(-15px);
   }
+
   40% {
     transform: translate(0);
   }
@@ -237,7 +242,7 @@ html {
   cursor: pointer;
   width: 100px;
   height: 40px;
-  background-image: url(./assets/images/light-mode.png);
+  background-image: url(/assets/images/light-mode.png);
   background-size: cover;
   border-radius: 50px;
   outline: none;
@@ -262,7 +267,7 @@ html {
 }
 
 .dark_toggler:checked {
-  background-image: url(./assets/images/dark-mode.png);
+  background-image: url(/assets/images/dark-mode.png);
   transition: background-image 0.4s;
   box-shadow: 0px 2px 5px 1px rgb(205, 134, 255);
 }
@@ -272,6 +277,7 @@ html {
   transition: all 0.4s;
   background-color: #dbc5f7;
 }
+
 /* end of dark mode toggle switch button */
 
 html {
@@ -295,11 +301,13 @@ html[light-mode="dark"] {
 .dark-theme .third {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 .dsc {
   box-shadow: 2px 5px 5px 0px rgb(130 216 251),
     inset -2px -5px 5px 0px rgb(130 216 251);
   background: #1f1d1d;
 }
+
 /*
 -------------------------------------
   SIDEBAR SVG ANIMATION
@@ -333,6 +341,7 @@ html[light-mode="dark"] {
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(360deg);
   }
@@ -342,6 +351,7 @@ html[light-mode="dark"] {
   from {
     transform: rotateX(0deg);
   }
+
   to {
     transform: rotateX(12deg);
   }
@@ -351,6 +361,7 @@ html[light-mode="dark"] {
   from {
     transform: translateY(0%) rotateZ(0deg);
   }
+
   to {
     transform: translateY(10%) rotateZ(20deg);
   }
@@ -369,6 +380,7 @@ html[light-mode="dark"] {
     z-index: 1;
     text-align: center;
   }
+
   .current-link:after {
     content: "";
     position: absolute;
@@ -400,6 +412,7 @@ html[light-mode="dark"] {
     text-align: center;
     font-size: larger;
   }
+
   a.nav-link {
     padding: 6px 21px !important;
   }
@@ -414,6 +427,7 @@ html[light-mode="dark"] {
 html[light-mode="light"] .nav-link {
   color: #000000 !important;
 }
+
 html[light-mode="light"] .nav-link:hover {
   color: rgb(106, 0, 187) !important;
 }
@@ -425,7 +439,7 @@ html[light-mode="light"] .nav-link:hover {
   font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 
 /* Dark mode styles */
@@ -438,7 +452,7 @@ html[light-mode="light"] .nav-link:hover {
 /* Dark mode hover */
 html[light-mode="dark"] .navbar-brand:hover {
   color: #a319ff;
-  transform: scale(1.1); 
+  transform: scale(1.1);
   text-shadow: #02d3cc 3px 3px 2px;
 }
 
@@ -450,7 +464,7 @@ html[light-mode="light"] .navbar-brand {
 /* Light mode hover */
 html[light-mode="light"] .navbar-brand:hover {
   color: #6700ac;
-  transform: scale(1.1); 
+  transform: scale(1.1);
   text-shadow: #00a49e 3px 3px 2px;
 }
 
@@ -606,7 +620,7 @@ Rotate Transition in foote Soical Icon
 -----------------------------
 */
 
-.linkedin:hover .linkedin-icon-footer > rect {
+.linkedin:hover .linkedin-icon-footer>rect {
   animation: rect-up 0.3s linear infinite;
 }
 
@@ -615,13 +629,14 @@ Rotate Transition in foote Soical Icon
     y: 10px;
     height: 11px;
   }
+
   0% {
     y: 13px;
     height: 8px;
   }
 }
 
-.linkedin:hover .linkedin-icon-footer > circle {
+.linkedin:hover .linkedin-icon-footer>circle {
   animation: bounce 0.4s linear infinite;
 }
 
@@ -629,9 +644,11 @@ Rotate Transition in foote Soical Icon
   75% {
     cy: 8px;
   }
+
   50% {
     cy: 4px;
   }
+
   0% {
     cy: 4px;
   }
@@ -670,10 +687,12 @@ Rotate Transition in foote Soical Icon
 }
 
 @keyframes shutter {
+
   0%,
   50% {
     stroke-dashoffset: 150;
   }
+
   75% {
     fill: #ef4649;
     stroke-dashoffset: 0;
@@ -682,10 +701,12 @@ Rotate Transition in foote Soical Icon
 }
 
 @keyframes lens {
+
   0%,
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -706,6 +727,7 @@ Rotate Transition in foote Soical Icon
   0% {
     transform: rotate(10deg);
   }
+
   100% {
     transform: rotate(-10deg);
   }
@@ -927,15 +949,18 @@ form {
     display: flex;
     justify-content: center;
   }
+
   .footer {
     padding-top: 10px;
   }
+
   #navbar-content {
     margin-top: -200px;
     height: 120vh;
     text-align: center;
     transform: translateY(25%);
   }
+
   #btnScrollToTop {
     display: none;
   }
@@ -946,12 +971,14 @@ form {
     display: flex;
     justify-content: center;
   }
+
   #navbar-content {
     margin-top: -180px;
     height: 120vh;
     text-align: center;
     transform: translateY(25%);
   }
+
   #btnScrollToTop {
     display: none;
   }
@@ -969,6 +996,7 @@ form {
     text-align: center;
     transform: translateY(25%);
   }
+
   #btnScrollToTop {
     display: none;
   }
@@ -979,15 +1007,18 @@ form {
     display: flex;
     justify-content: center;
   }
+
   #navbar-content {
     margin-top: -140px;
     height: 130vh;
     text-align: center;
     transform: translateY(25%);
   }
+
   .footer {
     margin-top: 6rem;
   }
+
   #btnScrollToTop {
     display: none;
   }
@@ -1004,15 +1035,18 @@ Send button micro animation
   margin-left: 4rem;
   width: 270px;
 }
+
 button {
   width: 15rem;
   height: 2.5rem;
   outline: none;
 }
+
 #lnch :hover {
   cursor: pointer;
   outline: none;
 }
+
 #lnch {
   font-size: 25px;
   color: #fff;
@@ -1024,6 +1058,7 @@ button {
   transition: 0.5s ease background-color, 0.5s ease box-shadow;
   background: #bb86fc;
 }
+
 #lnch_btn {
   position: absolute;
   top: 0px;
@@ -1035,28 +1070,35 @@ button {
   cursor: pointer;
   transition: 0.3s ease transform;
 }
+
 #lnch.launching {
   background-color: #f39c12;
   box-shadow: 0 10px 20px -6px #f39c12;
 }
+
 #lnch_btn.launching {
   transform: rotateZ(-90deg);
   animation: shake 0.3s ease 0.5s infinite;
 }
+
 @keyframes shake {
+
   10%,
   90% {
     transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
   }
+
   20%,
   80% {
     transform: translate3d(1px, 0, 0) rotateZ(-90deg);
   }
+
   30%,
   50%,
   70% {
     transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
   }
+
   40%,
   60% {
     transform: translate3d(1px, 0, 0) rotateZ(-90deg);
@@ -1072,11 +1114,13 @@ button {
   transform: rotateZ(-90deg);
   animation: moveUp 1s ease 0s forwards;
 }
+
 @keyframes moveUp {
   0% {
     margin-top: 0;
     transform: scale(1) rotateZ(-90deg);
   }
+
   100% {
     color: #ff1f5a;
     margin-top: -100px;
