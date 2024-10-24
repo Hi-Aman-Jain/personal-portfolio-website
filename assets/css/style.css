@@ -237,12 +237,16 @@ html {
   cursor: pointer;
   width: 100px;
   height: 40px;
-  background-image: url(/assets/css/tough-img/light-mode.png);
+  background-image: url(./assets/images/light-mode.png);
   background-size: cover;
   border-radius: 50px;
   outline: none;
-  transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px gray;
+  transition: background-image 0.4s ease;
+  box-shadow: 0px 2px 5px rgba(79, 79, 79, 0.959);
+}
+
+.dark_toggler:focus {
+  box-shadow: 0px 0px 5px 2px #ffe32a;
 }
 
 .dark_toggler:before {
@@ -253,26 +257,26 @@ html {
   height: 40px;
   width: 40px;
   border-radius: 50px;
-  transition: all 0.9s;
+  transition: all 0.4s;
   background-color: #f7ca33;
 }
 
 .dark_toggler:checked {
-  background-image: url(/assets/css/tough-img/dark-mode.png);
-  transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px rgb(178, 230, 247);
+  background-image: url(./assets/images/dark-mode.png);
+  transition: background-image 0.4s;
+  box-shadow: 0px 2px 5px 1px rgb(205, 134, 255);
 }
 
 .dark_toggler:checked:before {
   transform: translate(150%);
-  transition: all 0.9s;
+  transition: all 0.4s;
   background-color: #dbc5f7;
 }
 /* end of dark mode toggle switch button */
 
 html {
   background-color: #ffffff;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
 }
 
 html[light-mode="dark"] {
@@ -282,7 +286,7 @@ html[light-mode="dark"] {
 
 .dark-theme {
   background-color: #2c2332;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
   box-shadow: 0 0 0;
 }
 
