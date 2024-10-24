@@ -237,7 +237,7 @@ html {
   cursor: pointer;
   width: 100px;
   height: 40px;
-  background-image: url(assets/css/tough-img/light-mode.png);
+  background-image: url(/assets/css/tough-img/light-mode.png);
   background-size: cover;
   border-radius: 50px;
   outline: none;
@@ -258,7 +258,7 @@ html {
 }
 
 .dark_toggler:checked {
-  background-image: url(./assets/css/dark-mode.png);
+  background-image: url(/assets/css/tough-img/dark-mode.png);
   transition: background-image 0.9s;
   box-shadow: 0px 2px 5px 1px rgb(178, 230, 247);
 }
