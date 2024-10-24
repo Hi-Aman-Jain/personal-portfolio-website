@@ -574,6 +574,7 @@ ul.skills li {
 
 ul.skills li::after {
     content: attr(data-percent) '%';
+	font-weight: lighter;
     position: absolute;
 }
 
@@ -583,7 +584,7 @@ ul.skills li.sk-web { --per: 75; }
 ul.skills li.sk-cod { --per: 60; }
 ul.skills li.sk-dsa { --per: 75; }
 ul.skills li.sk-dbm { --per: 65; }
-ul.skills li.sk-gra { --per: 65; }
+ul.skills li.sk-gra { --per: 80; }
 ul.skills li.sk-con { --per: 74; }
 ul.skills li.sk-vid { --per: 78; }
 
