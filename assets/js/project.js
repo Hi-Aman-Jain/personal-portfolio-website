@@ -14,7 +14,7 @@ const projects = [
     Githublink: "https://github.com/Hi-Aman-Jain/portfolio-website",
   },
   {
-    title: "LEARNIVERSE: E-Learning Website",
+    title: "LEARNIVERSE",
     cardImage: "assets/images/project-page/Learniverse.jpg",
     description: ".",
     tagimg: "",

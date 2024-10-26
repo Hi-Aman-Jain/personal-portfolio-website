@@ -198,8 +198,8 @@ a:hover {
 .card .wrapper {
   background-color: #fff;
   border: 0;
-  border-radius: 10px;
-  min-height: 21.5rem;
+  border-radius: 40px;
+  min-height: 19rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -328,7 +328,7 @@ input[type="text"] {
 .skill-card {
   width: 300px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 42px;
 }
 
 .skill-card .header {
@@ -367,13 +367,14 @@ input[type="text"] {
 
 .skill-card .data {
   color: #ffffff;
-  background-color: rgba(42, 8, 143, 0.74);
+  background-color: #160e1de3;
   transform: translateY(calc(60px + 4em));
   padding: 5px;
 }
 
 .skill-card .title a {
   color: #fff;
+  font-weight: bolder;
 }
 
 /*social icons*/
@@ -507,7 +508,7 @@ ul {
   .skill-card {
     width: 450px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 42px;
   }
 }
 
