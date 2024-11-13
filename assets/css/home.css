@@ -93,7 +93,7 @@ figure .image-1 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(assets/images/sliceimg1.jpg);
+  background: url(/assets/images/sliceimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -108,7 +108,7 @@ figure .image-2 {
   position: absolute;
   top: 0;
   opacity: 0;
-  background: url(assets/images/sliceimg2.jpg);
+  background: url(/assets/images/sliceimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transition: all .6s ease-in-out;
@@ -193,7 +193,7 @@ figure .image-2:nth-child(9) {
   font-family: cursive;
   font-size: 2.3cm;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(rgb(0, 255, 242), rgb(102, 0, 255));
+  background-image: linear-gradient(rgb(0, 161, 153), rgb(61, 0, 152));
   background-size: 65px 60%;
   background-repeat: no-repeat;
   background-position: 0% 70%;
@@ -202,18 +202,15 @@ figure .image-2:nth-child(9) {
 }
 
 .header:hover {
-  background-size: 100% 90%;
-  background-position: 100% 0px;
-  transition: background-position .7s, background-size .5s ease-in-out;
+  background-size: 100% 80%; 
+  background-position: 250% 75%; 
+  transition: background-position .5s ease-in-out, background-size .5s ease-in-out;
 }
 
-/* 
-  html[data-theme="dark"] .header{
-    color: #ff0066;
-  }
-  html[data-theme="dark"].header:hover{
-    color:#b494eb;
-  } */
+
+html[light-mode="light"] .header{
+  background-image: linear-gradient(rgb(26, 255, 244), rgb(115, 21, 255));
+}
 
 .text {
   font-size: 10%;
