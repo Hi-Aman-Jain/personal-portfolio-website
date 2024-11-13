@@ -4,6 +4,10 @@
 
 ![Porfolio Cover](/assets/images/cover.gif)
 
+![Porfolio Cover](/assets/images/SS-1.jpg)
+
+![Porfolio Cover](/assets/images/SS-2.jpg)
+
 The website consists of the following **Sections**:
 
 ## Home
