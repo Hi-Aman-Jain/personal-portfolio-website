@@ -446,8 +446,13 @@ html[light-mode="light"] .nav-link:hover {
 .dark-theme .navbar-nav .nav-link,
 .dark-theme .navbar-brand {
   color: #ffffff98;
-  text-shadow: rgba(95, 95, 95, 0.872) 3px 3px 3px;
   font-weight: 100%;
+}
+
+/* Dark mode styles */
+html[light-mode="dark"] .navbar-brand {
+  color: #ffffff98;
+  text-shadow: rgba(95, 95, 95, 0.872) 3px 3px 3px;
 }
 
 /* Dark mode hover */
