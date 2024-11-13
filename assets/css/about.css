@@ -104,22 +104,30 @@ html[light-mode="light"] .my-self {
 
 /* Light Mode */
 html[light-mode="light"] .btn {
-  color: #000000;
-  text-shadow: #ffffff 2px 2px 2px;
+  color: #161616af;
   position: relative;
   z-index: 1;
 }
 
+html[light-mode="light"] .btn:hover {
+  color: #000000;
+  text-shadow: #ffffff 2px 2px 2px;
+}
+
 html[light-mode="light"] .btn::before {
-  background-color: #9a3bff;
+  background-color: #7b00ff;
 }
 
 html[light-mode="light"] .btn::after {
-  background-color: #4ffff9;
+  background-color: #00fff7;
 }
 
 /* Dark Mode */
 html[light-mode="dark"] .btn {
+  color: #e6e6e695;
+}
+
+html[light-mode="dark"] .btn:hover {
   color: #ffffff;
   text-shadow: #000000 2px 2px 2px;
 }
