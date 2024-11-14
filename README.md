@@ -69,4 +69,4 @@ Contributions are not currently open as this is a personal project. However, fee
 
 Thank you for visiting my portfolio! 🎉 I hope you enjoy the animations and design, and find it informative and visually engaging.
 
-# ----------------------------------------------------------------------------
+# --------------------------------------------------------------
