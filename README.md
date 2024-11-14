@@ -2,7 +2,7 @@
 
 🙌Welcome to my personal portfolio website! This repository contains the source code and files for my portfolio website, which was built using HTML, CSS, and JavaScript. Till now i have updated many parts so that it always looks perfect according to the time. In this, there is a footer - Contact Me part in every page of the section. 
 
-![Porfolio Cover](/assets/images/cover.gif)
+![Porfolio Cover](/assets/images/Portfolio%20GIF.mp4)
 
 ![Porfolio Cover](/assets/images/SS-1.jpg)
 
